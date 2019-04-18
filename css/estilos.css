@@ -1,0 +1,52 @@
+/* ****************************
+Reglas = conjunto de instruciones
+Selectores = elemento HTML que se modificará su estilo
+Declaraciones = es el proceso que le damos a ese selector
+Propiedades = son aquellas que componen a los elementos
+Valores = son los valores de las propiedades
+*******************************/
+
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/* ****************************
+--Selector por etiqueta header - section - nav - body 
+header{
+    background: blue;
+}
+--selector descendente  
+body header div nav ol li a{
+    background: blue;
+}
+
+--Selector por ID
+#mydiv{
+    background: blue;
+}
+
+--Selector por class
+.mydiv{
+    background: blue;
+}
+******************************/
+
+/*------ Variables */
+:root{
+    /*------ Colores */
+    --green-color: #7ACC2D;
+    --black-color: #313337;
+    --white-color: white;
+    /*------ Tipografía */
+    --normal:12px;
+    /*------ Espaciado */
+    --space:10px;
+    --space-2:20px;
+    /*------ Box shadow*/
+    --box:0px 0 2px 1px #e6e5e9;
+  }

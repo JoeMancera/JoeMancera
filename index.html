@@ -6,63 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joe Mancera</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="images/logo.png" alt="Logo JoeMancera" />
             </figure>
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
-                        <a href="#portafolio">Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#habilidades">Experiencia</a>
+                        <a class="link" href="#habilidades">Experiencia</a>
                     </li>
                     <li>
-                        <a href="#contacto">Trabajemos Juntos</a>
+                        <a class="link" href="#contacto">Trabajemos Juntos</a>
                     </li>
                 </ol>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             Hola! soy <strong>Joe Mancera</strong> Desarrollador <br/>Web casi <strong>unicorrnio</strong> Tech...<br/> Un unicornio bebé
         </h1>
         <img src="images/hero.jpg" alt="Imagen de portada" width="500" />
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3>Platzi Video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong>  01/07/2019</small></p>
-            <p><small><strong>Puedes verlo en:</strong>  platzi.com/Diploma</small></p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit nostrum nesciunt totam illum maiores voluptates officia dignissimos sapiente rem? Illum, vitae aperiam nisi a delectus fugit. Reiciendis, blanditiis ab? </p>
-            <img src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
+        <article class="project">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong>  01/07/2019</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong>  platzi.com/Diploma</small></p>
+            <p class="project-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit nostrum nesciunt totam illum maiores voluptates officia dignissimos sapiente rem? Illum, vitae aperiam nisi a delectus fugit. Reiciendis, blanditiis ab? </p>
+            <figure class="project-image-container">
+                <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
+            </figure>
         </article>
     </section>
     <section id="habilidades">
         <h2>Mis Skills</h2>
-        <article>
-            <figure>
-                <img src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
+        <article class="skill">
+            <figure class="skill-image-container">
+                <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
             </figure>
-            <h3>Desarrollo Web</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
-            <a href="#">Ver Certificado</a>
+            <h3 class="skill-title">Desarrollo Web</h3>
+            <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
+            <a class="skill-url" href="#">Ver Certificado</a>
         </article>
     </section>
-    <section id="contacto">
-        <form action="">
+    <section id="contacto" class="contact">
+        <form class="form-email" action="">
             <h3>¿Creamos algo juntos?</h3>
             <input type="email" placeholder="Déjame tu e-mail">
             <button>Enviar</button>
         </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
 </body>
 </html>
