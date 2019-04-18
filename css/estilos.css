@@ -39,14 +39,77 @@ body header div nav ol li a{
 /*------ Variables */
 :root{
     /*------ Colores */
-    --green-color: #7ACC2D;
+    --blue-dark: #003E80;
+    --blue-light: #4DA3FF;
+    --blue: #007CFF;
+    --blue-gray: #265180;
+    --blue-sgray: #0063CC;
     --black-color: #313337;
     --white-color: white;
     /*------ Tipografía */
     --normal:12px;
+    --title-size: 23px;
     /*------ Espaciado */
     --space:10px;
     --space-2:20px;
-    /*------ Box shadow*/
-    --box:0px 0 2px 1px #e6e5e9;
-  }
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    color: var(--white-color);
+    font-size: 32px;
+    letter-spacing: -.2px;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+h1 strong{
+    color: var(--blue-light);
+}
+
+.header{
+    background-color: var(--blue-gray);
+    color: var(--white-color);
+}
+
+.header a{
+    color: var(--white-color);
+    text-decoration: none;    
+}
+
+.hero{
+    background-image: url(../images/hero.jpg);
+    background-color: var(--blue-gray);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 300px;
+}
+
+.portfolio{
+    background-color: #fafafa;
+}
+.project{
+    background: var(--white-color);
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.project-details{
+    width: 500px;
+}
+
+.project-image-container{
+    width: 500px;
+}
