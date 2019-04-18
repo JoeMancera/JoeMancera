@@ -72,44 +72,248 @@ h1{
     margin: 0px;
 }
 
+h2{
+    color: var(--blue-light);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 h1 strong{
     color: var(--blue-light);
 }
 
-.header{
-    background-color: var(--blue-gray);
-    color: var(--white-color);
+ol, ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
+figure{
+    margin: 0px;
+}
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.header{
+    height: 70px;
+    align-items: center;
+    background-color: var(--blue-gray);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+}
 .header a{
     color: var(--white-color);
-    text-decoration: none;    
+    text-decoration: none;   
+    display: flex;    
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
 }
 
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
 .hero{
-    background-image: url(../images/hero.jpg);
+    align-items: center;
     background-color: var(--blue-gray);
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    justify-content: space-between;
+    display: flex;
     height: 300px;
+}
+
+.hero-image{
+    object-fit: cover;
 }
 
 .portfolio{
     background-color: #fafafa;
+    padding: 20px;
 }
 .project{
     background: var(--white-color);
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong{
+    font-family: 'Ubuntu', sans-serif;
 }
 .project-details{
     width: 500px;
 }
 
+.project-title{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.project-course{
+    margin: 10px 0;
+}
+
+.project-course, .project-date, .project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
 .project-image-container{
     width: 500px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-title{
+    margin-left: 20px;
+}
+.skill{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0; /*Para que tome el ancho y alto dado y no lo que se le de la gana XD*/
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.skill-title{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.skill-detail{
+    margin: 20px 40px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-description{
+    text-align: left;
+}
+
+.skill-url{
+    color: #056fff;
+    border: 1px solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skill img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact{
+    background-color: var(--blue-gray);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email h3{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+.form-email input{
+    border-color: #7c7c7c;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px 20px 5px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px 215px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    
+}
+
+.form-email button{
+    display: block;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.social{
+    
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter{
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.svg);
+    
+}
+.social-link.github{
+    background-image: url(../images/github.svg);
+}
+.social-link.instagram{
+    background-image: url(../images/instagram.svg);
+}
+
+
+.footer{ 
+    background-color: var(--blue-gray);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
 }

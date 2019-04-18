@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="container">
             <figure class="logo">
-                <img src="images/logo.png" alt="Logo JoeMancera" />
+                <img height="50px" src="images/logo.png" alt="Logo JoeMancera" />
             </figure>
             <nav class="menu">
                 <ol>
@@ -31,26 +31,17 @@
         </div>
     </header>
     <section class="hero">
-        <h1>
-            ¡Hola! soy <strong>Joe Mancera</strong> Desarrollador <br/>Web casi <strong>unicorrnio</strong> Tech...<br/> Un unicornio bebé
-        </h1>
-        <!-- <img src="images/hero.jpg" alt="Imagen de portada" width="500" /> -->
+        <div class="container">
+            <h1>
+                ¡Hola! soy <strong>Joe Mancera</strong> Desarrollador <br/>Web casi <strong>unicorrnio</strong> Tech...<br/> Un unicornio bebé
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" alt="Imagen de portada" width="500" height="300" />
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Platzi Video</h3>
-                <h6 class="project-course">React Native / React</h6>
-                <p class="project-date"><small><strong>Fecha:</strong>  01/07/2019</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong>  platzi.com/Diploma</small></p>
-                <p class="project-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit nostrum nesciunt totam illum maiores voluptates officia dignissimos sapiente rem? Illum, vitae aperiam nisi a delectus fugit. Reiciendis, blanditiis ab? </p>
-            </div>
-            <figure class="project-image-container">
-                <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
-            </figure>
-        </article>
-        <article class="project">
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Platzi Video</h3>
                     <h6 class="project-course">React Native / React</h6>
@@ -62,25 +53,87 @@
                     <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
                 </figure>
             </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong>  01/07/2019</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong>  platzi.com/Diploma</small></p>
+                    <p class="project-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit nostrum nesciunt totam illum maiores voluptates officia dignissimos sapiente rem? Illum, vitae aperiam nisi a delectus fugit. Reiciendis, blanditiis ab? </p>
+                </div>
+                <figure class="project-image-container">
+                    <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
+                </figure>
+            </article>
+        </div>
     </section>
     <section id="habilidades">
-        <h2>Mis Skills</h2>
-        <article class="skill">
-            <figure class="skill-image-container">
-                <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
-            </figure>
-            <h3 class="skill-title">Desarrollo Web</h3>
-            <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
-            <a class="skill-url" href="#">Ver Certificado</a>
-        </article>
+        <div class="container">
+            <h2 class="skills-title">Mis Skills</h2>
+            <div class="skills">
+                <article class="skill">
+                    <figure class="skill-image-container">
+                        <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
+                    </figure>
+                    <div class="skill-detail">
+                        <h3 class="skill-title">Desarrollo Web</h3>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
+                        <a class="skill-url" href="#">Ver Certificado</a>
+                    </div>
+                </article>
+                <article class="skill">
+                    <figure class="skill-image-container">
+                        <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
+                    </figure>
+                    <div class="skill-detail">
+                        <h3 class="skill-title">Desarrollo Web</h3>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
+                        <a class="skill-url" href="#">Ver Certificado</a>
+                    </div>
+                </article>
+                <article class="skill">
+                    <figure class="skill-image-container">
+                        <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
+                    </figure>
+                    <div class="skill-detail">
+                        <h3 class="skill-title">Desarrollo Web</h3>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
+                        <a class="skill-url" href="#">Ver Certificado</a>
+                    </div>
+                </article>
+                <article class="skill">
+                    <figure class="skill-image-container">
+                        <img class="skill-image" src="images/platzi-conf.jpg" alt="Img Skill 1" width="500" />
+                    </figure>
+                    <div class="skill-detail">
+                        <h3 class="skill-title">Desarrollo Web</h3>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis. Repellendus dignissimos est et maxime. Repellat, ducimus nam nesciunt eius exercitationem voluptatibus optio mollitia sunt saepe, beatae rem excepturi? Repellendus?</p>
+                        <a class="skill-url" href="#">Ver Certificado</a>
+                    </div>
+                </article>
+            </div>        
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form class="form-email" action="">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="email" placeholder="Déjame tu e-mail">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form class="form-email" action="">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="email" placeholder="Déjame tu e-mail">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="#" class="social-link twitter"></a>
+                <a href="#" class="social-link facebook"></a>
+                <a href="#" class="social-link github"></a>
+                <a href="#" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+        <div class="container">
+            <div>Curso de desarrollo web 2018 <img width="80px" src="images/platzi.png" alt="platzi"> </div>
+            <div>Desinged by @Thespianartis</div>
+        </div>
+    </footer>
 </body>
 </html>
