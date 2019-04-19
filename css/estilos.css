@@ -54,6 +54,10 @@ body header div nav ol li a{
     --space-2:20px;
 }
 
+html{
+    background-color: #fafafa;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -145,6 +149,11 @@ figure{
 
 .hero-image{
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.my-selfDescription{
+    font-size: 20px;
 }
 
 .portfolio{
@@ -188,6 +197,10 @@ figure{
 }
 .project-image-container{
     width: 500px;
+}
+
+.skill-list{
+    background-color: #fafafa;
 }
 .skills{
     display: flex;
@@ -272,10 +285,6 @@ figure{
     border-radius: 5px;
     width: 100px;
     margin-top: 10px;
-}
-
-.social{
-    
 }
 
 .social-link{
