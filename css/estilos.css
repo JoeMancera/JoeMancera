@@ -218,6 +218,7 @@ figure{
 .skills-title{
     margin-left: 20px;
 }
+
 .skill{
     margin: 10px;
     width: 480px;
@@ -260,6 +261,33 @@ figure{
     height: 200px;
     object-fit: cover;
 }
+
+.tools{
+    display: block;
+}
+
+.tools-title{
+    margin-left: 20px;
+}
+
+.tool-circle {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 40px;
+  }
+  
+  .blue {
+    background-color: #3498db;  
+  }
 
 .contact{
     background-color: var(--dark);
