@@ -223,7 +223,7 @@ figure{
 }
 
 .skill-title{
-    font-size: 24px;
+    font-size: 26px;
     margin: 10px;
 }
 
@@ -234,6 +234,7 @@ figure{
     position: relative;
     padding: 20px;
     text-align: center;
+    border-radius: 20px;
 }
 
 .skill-description{
