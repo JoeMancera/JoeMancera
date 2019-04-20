@@ -181,6 +181,11 @@ figure{
     width: 500px;
 }
 
+.project-details a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
 .project-title{
     font-size: 30px;
     margin-top: 0px;
@@ -235,6 +240,7 @@ figure{
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    min-height: 200px;
 }
 
 .skill-description{
