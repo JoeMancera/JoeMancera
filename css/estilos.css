@@ -100,7 +100,7 @@ figure{
     margin: 0px;
 }
 .container{
-    width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -116,6 +116,7 @@ figure{
     color: var(--white);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header a{
     color: var(--white);
@@ -146,6 +147,7 @@ figure{
     justify-content: space-between;
     display: flex;
     height: 300px;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -170,6 +172,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project strong{
@@ -296,6 +299,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form-email h3{
@@ -355,6 +359,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -363,4 +368,17 @@ figure{
 
 .footer a{
     color: white;
+}
+/* desktop first empezar desde el MQ más grande */
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 480px){
+    
+}
+@media screen and (max-width: 320px){
+    
 }
