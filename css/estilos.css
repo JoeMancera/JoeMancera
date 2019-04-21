@@ -189,6 +189,7 @@ figure{
     background-color: var(--white);
     padding: 20px;
 }
+
 .project{
     background: var(--white);
     border: 1px solid gray;
@@ -401,7 +402,7 @@ figure{
     color: white;
 }
 /* desktop first empezar desde el MQ más grande */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     h1{
         color: var(--dark);
         text-shadow: 1px 2px 2px var(--white);
@@ -433,8 +434,17 @@ figure{
         bottom: 0;
         width: 100%;
     }    
+
+    .portfolio, .my-self{
+        padding: 0px;
+    }
 }
 @media screen and (max-width: 767px){
+
+    h2{
+        font-size: 1em;
+        margin: .8em 0;
+    }
     .burger-button{
         display: flex;
     }
@@ -491,7 +501,7 @@ figure{
     .my-selfDescription{
         font-size: .8em;
     }
-    
+
     .project {
         display: block;
     }
@@ -526,7 +536,7 @@ figure{
     }
     
     .project-description{
-        font-size: .8em;
+        font-size: 1em;
     }
     
     .skill{
@@ -536,6 +546,10 @@ figure{
     
     .skill img {
         width: 100%;
+    }
+
+    .skills-title{
+        margin-left: 0px;
     }
     
     .contact {
@@ -556,10 +570,10 @@ figure{
     }
         
     .my-selfDescription{
-        font-size: .6em;
+        font-size: .8em;
     }
     .project-details {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .skill-detail{
