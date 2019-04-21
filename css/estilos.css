@@ -228,8 +228,8 @@ figure{
 }
 
 .skill{
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0; /*Para que tome el ancho y alto dado y no lo que se le de la gana XD*/
     border-radius: 10px;
     overflow: hidden;
@@ -437,10 +437,24 @@ figure{
     .project-description{
         font-size: .8em;
     }
+
+    .skill{
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .skill img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 479px){
     .project-details {
         font-size: 12px;
+    }
+    
+    .skill-detail{
+        margin: -50px .5em .5em;
+        padding: .8em;
     }
 }
 @media screen and (max-width: 319px){
