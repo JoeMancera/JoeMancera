@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/icons.css">
 </head>
 <body>
-    <span class="icon-menu burger-button"></span>
+    <span class="icon-menu burger-button" id=burger-menu></span>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -151,5 +151,19 @@
             <div>Desinged by <a href="https://instagram.com/joeharrym">@joeharrym</a></div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const burger = document.querySelector('#burger-menu');
+
+        function ActMenu(){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+
+        burger.addEventListener('click', ActMenu)
+    </script>
 </body>
 </html>
