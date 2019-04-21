@@ -179,10 +179,10 @@ figure{
 .project strong{
     /* font-family: 'Ubuntu', sans-serif; */
     font-family: var(--font-family-title);
-
+    
 }
 .project-details{
-    width: 500px;
+    width: 50%;
 }
 
 .project-details a{
@@ -208,7 +208,11 @@ figure{
     font-size: 20px;
 }
 .project-image-container{
-    width: 500px;
+    width: 50%;
+}
+
+.project-image-container img {
+    max-width: 100%;
 }
 
 .skill-list{
@@ -287,11 +291,11 @@ figure{
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 auto 40px;
-  }
-  
-  .blue {
+}
+
+.blue {
     background-color: #3498db;  
-  }
+}
 
 .contact{
     background-color: var(--dark);
@@ -379,26 +383,65 @@ figure{
         display: block;
         height: auto;
     }
-
+    
     .header ol{
         display: block;
     }
-
+    
     .header ol li {
         height: 50px;
         display: initial;
     }
-
+    
     .header a {
         justify-content: center;
     }
-
+    
     .header .logo{
         text-align: center;
     }
+    
+    .project {
+        display: block;
+    }
+    
+    .project-image-container {
+        width: auto;
+        text-align: center;
+    }
+    
+    .project-course, .project-date, .project-url {
+        margin: .3em 0;
+    }
+    .project-details {
+        width: auto;
+    }
+    
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    
+    .project-url {
+        font-size: 1em;
+    }
+    
+    .project-course {
+        font-size: 1em;
+    }
+    
+    .project-date {
+        font-size: 1em;
+    }
+    
+    .project-description{
+        font-size: .8em;
+    }
 }
 @media screen and (max-width: 479px){
-    
+    .project-details {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 319px){
     
