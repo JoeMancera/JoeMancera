@@ -101,6 +101,7 @@ figure{
 }
 .container{
     max-width: 1080px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -373,12 +374,32 @@ figure{
 @media screen and (max-width: 1024px){
     
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+    }
+
+    .header ol li {
+        height: 50px;
+        display: initial;
+    }
+
+    .header a {
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 479px){
     
 }
-@media screen and (max-width: 480px){
-    
-}
-@media screen and (max-width: 320px){
+@media screen and (max-width: 319px){
     
 }
