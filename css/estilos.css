@@ -157,8 +157,15 @@ figure{
     border-radius: 10px;
 }
 
+.my-self{
+    padding: 20px;
+}
+
 .my-selfDescription{
-    font-size: 20px;
+    font-size: 18px;
+    border: 1px solid var(--gray);
+    padding: 1em;
+    border-radius: 10px;
 }
 
 .portfolio{
@@ -378,9 +385,40 @@ figure{
 }
 /* desktop first empezar desde el MQ más grande */
 @media screen and (max-width: 1024px){
+    h1{
+        color: var(--dark);
+        text-shadow: 1px 2px 2px var(--white);
+        font-size: 2em;
+        z-index: 2;
+        text-align: right;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 strong{
+        text-shadow: initial;
+    }
     
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    
+    .hero-image{
+        border-radius: 0px; 
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }    
 }
 @media screen and (max-width: 767px){
+
     .header{
         display: block;
         height: auto;
@@ -401,6 +439,14 @@ figure{
     
     .header .logo{
         text-align: center;
+    }
+
+    .hero-image{
+        filter: opacity(80%) blur(3px);
+    }
+    
+    .my-selfDescription{
+        font-size: .8em;
     }
     
     .project {
@@ -439,29 +485,36 @@ figure{
     .project-description{
         font-size: .8em;
     }
-
+    
     .skill{
         width: auto;
         flex-shrink: initial;
     }
-
+    
     .skill img {
         width: 100%;
     }
-
+    
     .contact {
         height: auto;
         padding: 1em 0;
         text-align: center;
         display: block;
     }
-
+    
     .form-email button{
         margin: 1em auto;
     }
-
+    
 }
 @media screen and (max-width: 475px){
+    h1{
+        font-size: 1.5em;
+    }
+    
+    .my-selfDescription{
+        font-size: .6em;
+    }
     .project-details {
         font-size: 12px;
     }
@@ -473,13 +526,20 @@ figure{
     .form-email h3{
         margin-top: 0;
     }
-
+    
     .footer {
         display: block;
         text-align: center;
         border: 1px solid transparent;
     }
 }
-@media screen and (max-width: 319px){
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.25em;
+    }
+    
+    .hero{
+        padding: 10px 1.5em;
+    }
     
 }
