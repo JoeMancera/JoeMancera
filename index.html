@@ -154,7 +154,24 @@
     <script>
         const menu = document.querySelector('.menu');
         const burger = document.querySelector('#burger-menu');
-
+        
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        
+        if(ipad.matches)
+        burger.addEventListener('click', ActMenu);        
+        
+        ipad.addListener(changeScreen);
+        
+        function changeScreen(event){
+            if (event.matches) {
+                console.log('True');
+                burger.addEventListener('click', ActMenu);
+            } else {
+                console.log('False');
+                burger.removeEventListener('click', ActMenu);
+            }
+        }
+        
         function ActMenu(){
             if(menu.classList.contains('is-active')){
                 menu.classList.remove('is-active');
@@ -162,8 +179,7 @@
                 menu.classList.add('is-active');
             }
         }
-
-        burger.addEventListener('click', ActMenu)
+        
     </script>
 </body>
 </html>
