@@ -52,8 +52,8 @@ body header div nav ol li a{
     /*------ Espaciado */
     --space:10px;
     --space-2:20px;
-    --font-family-title: 'Allerta Stencil', sans-serif;
-    --font-family: 'Roboto', sans-serif;
+    --font-family-title: 'Allerta Stencil', system-ui;
+    --font-family: 'Roboto', system-ui;
 }
 
 html{
@@ -76,6 +76,7 @@ h1{
     letter-spacing: -.2px;
     line-height: 1.5em;
     margin: 0px;
+    max-width: 500px;
 }
 
 h2{
