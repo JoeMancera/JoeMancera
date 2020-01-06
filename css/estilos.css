@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    color: var(--gray);
+    color: var(--white);
     font-size: 32px;
     letter-spacing: -.2px;
     line-height: 1.5em;
@@ -89,7 +89,7 @@ h2{
 }
 
 h1 strong{
-    color: var(--white);
+    color: var(--light);
 }
 
 ol, ul{
@@ -163,7 +163,7 @@ figure{
 }
 .hero{
     align-items: center;
-    background-color: var(--dark);
+    background: linear-gradient(var(--dark),var(--dark-trns) );
     justify-content: space-between;
     display: flex;
     height: 300px;
@@ -171,8 +171,15 @@ figure{
 }
 
 .hero-image{
+    -webkit-filter: contrast(80%);
+    filter: contrast(145%);
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+.hero-image-2{
+    display: none;
+    border:2px solid var(--light)
 }
 
 .my-self{
@@ -377,6 +384,11 @@ figure{
     background-image: url(../images/facebook.svg);
     
 }
+
+.social-link.linkedin{
+    background-image: url(../images/linkedIn.svg);
+}
+
 .social-link.github{
     background-image: url(../images/github.svg);
 }
@@ -405,13 +417,11 @@ figure{
 /* desktop first empezar desde el MQ más grande */
 @media screen and (max-width: 1023px){
     h1{
-        color: var(--dark);
-        text-shadow: 1px 2px 2px var(--white);
+        color: var(--white);
+        text-shadow: 1px 2px 2px var(--dark);
         font-size: 2em;
         z-index: 2;
-        text-align: right;
         width: 100%;
-        background: rgba(0, 0, 0, 0.4);
     }
     
     h1 strong{
@@ -423,18 +433,20 @@ figure{
         position: relative;
         overflow: hidden;
         padding: 2em;
+        justify-content: space-evenly;
     }
     
     .hero-image{
-        border-radius: 0px; 
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }    
+        display: none;
+    }
+    
+    .hero-image-2{
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        display: inline;
+    }
 
     .portfolio, .my-self{
         padding: 0px;
@@ -444,7 +456,22 @@ figure{
         padding-left: 35vw;
     }
 }
+@media screen and (max-width: 840px){
+    .hero-image-2{
+        max-width: 170px;
+        max-height: 170px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+}
 @media screen and (max-width: 767px){
+
+    h1{
+        font-size: 20px;
+        max-width: 350px;
+    }
 
     h2{
         font-size: 1em;
@@ -487,7 +514,6 @@ figure{
         top: 0;
         left: -100vw;
         width: 100vw;
-        /* height: 100vh; */
         bottom: 0;
         display: flex;
         align-items: center;
@@ -498,9 +524,12 @@ figure{
     .menu.is-active{
         left: 0;
     }
-    
-    .hero-image{
-        filter: opacity(80%) blur(3px);
+    .hero{
+        padding: 8px;
+    }
+    .hero-image-2{
+        max-width: 100px;
+        max-height: 100px;
     }
     
     .my-selfDescription{
@@ -569,9 +598,9 @@ figure{
     }
     
 }
-@media screen and (max-width: 475px){
+@media screen and (max-width: 490px){
     h1{
-        font-size: 1.5em;
+        display: none;
     }
         
     .my-selfDescription{
@@ -596,12 +625,6 @@ figure{
     }
 }
 @media screen and (max-width: 320px){
-    h1{
-        font-size: 1.25em;
-    }
-    
-    .hero{
-        padding: 10px 1.5em;
-    }
+
     
 }

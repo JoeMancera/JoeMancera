@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joe Mancera</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <style>
-        :root{--dark: #000D33;--dark-trns: rgba(0, 13, 51, 0.8);--light: #D9D9D9;--gray: #A6A6A6;--sgray: #595959;--black: #313337;--white: #fafafa;--normal:12px;--title-size: 23px;--space:10px;--space-2:20px;--font-family-title: 'Allerta Stencil', system-ui;--font-family: 'Roboto', system-ui}html{background-color:var(--white)}body{font-family:var(--font-family);margin:0px}h1,h2,h3{font-family:var(--font-family-title);font-weight:normal}h1{color:var(--gray);font-size:32px;letter-spacing:-.2px;line-height:1.5em;margin:0px;max-width:500px}h2{color:var(--dark);text-transform:uppercase;font-family:var(--font-family);font-weight:bold;font-size:24px;margin-bottom:40px}h1 strong{color:var(--white)}ol{margin:0px;padding:0px;list-style:none}figure{margin:0px}.burger-button{width:40px;height:40px;border-radius:50%;background-color:var(--dark-trns);color:var(--white);display:none;align-items:center;justify-content:center;position:fixed;z-index:4;left:.5em;top:.5em}.container{max-width:1080px;flex:1;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit;padding:0 .5em}.header{height:70px;align-items:center;background-color:var(--dark);color:var(--white);display:flex;justify-content:space-between;flex-wrap:wrap}.header a{color:var(--white);text-decoration:none;display:flex;align-items:center;height:inherit;padding:0 10px}.header ol{display:flex;height:inherit}.header ol li{height:inherit;display:flex;align-items:center}.menu{height:inherit}.hero{align-items:center;background-color:var(--dark);justify-content:space-between;display:flex;height:300px;flex-wrap:wrap}.hero-image{object-fit:cover;border-radius:10px}.my-self{padding:20px}.my-selfDescription{font-size:18px;border:1px solid var(--gray);padding:1em;border-radius:10px}.portfolio{background-color:var(--white);padding:20px}.project{background:var(--white);border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.project-details{width:50%}.project-title{font-size:30px;margin-top:0px;margin-bottom:10px}.project-image-container{width:50%}.project-image-container img{max-width:100%}@media screen and (max-width:1023px){h1{color:var(--dark);text-shadow:1px 2px 2px var(--white);font-size:2em;z-index:2;text-align:right;width:100%;background:rgba(0,0,0,0.4)}h1 strong{text-shadow:initial}.hero{height:auto;position:relative;overflow:hidden;padding:2em}.hero-image{border-radius:0px;position:absolute;z-index:1;left:0;right:0;top:0;bottom:0;width:100%}.portfolio,.my-self{padding:0px}}@media screen and (max-width:767px){h2{font-size:1em;margin:.8em 0}.burger-button{display:flex}.header{display:block;height:auto}.header ol{display:block}.header ol li{height:50px;display:initial}.header a{justify-content:center;height:38px;font-size:2em;text-decoration:underline;margin-bottom:.5em}.header .logo{text-align:center}.menu{position:fixed;background-color:var(--dark-trns);z-index:3;top:0;left:-100vw;width:100vw;bottom:0;display:flex;align-items:center;justify-content:center}.hero-image{filter:opacity(80%) blur(3px)}.my-selfDescription{font-size:.8em}.project{display:block}.project-image-container{width:auto;text-align:center}.project-details{width:auto}.project-title{font-size:1.5em;margin-bottom:.3em}}@media screen and (max-width:475px){h1{font-size:1.5em}.my-selfDescription{font-size:.8em}.project-details{font-size:14px}}@media screen and (max-width:320px){h1{font-size:1.25em}.hero{padding:10px 1.5em}}
-    </style>
 </head>
 <body>
     <span class="icon-menu burger-button" id=burger-menu></span>
@@ -41,7 +38,7 @@
                 ¡Hola! soy <strong>Joe Mancera</strong>  <br/>Desarrollador Web <br>Casi <strong>unicornio</strong> tech...<br/> Un unicornio en formación
             </h1>
             <img class="hero-image" src="images/hero.png" alt="Imagen de portada" width="500" height="300" />
-            <!-- <img class="hero-image" src="images/hero.png" srcset="images/hero.png, org-img/hero.jpg 2x" alt="Imagen de portada" width="500" height="300" /> -->
+            <img class="hero-image-2" src="images/hero2.jpg" alt="Imagen de portada" width="500" height="300" />
         </div>
     </section>
     <section id="quien-soy" class="my-self">
@@ -149,14 +146,13 @@
         <div class="container">
             <form class="form-email" action="">
                 <h3>¿Creamos algo juntos?</h3>
-                <input type="email" placeholder="Déjame tu e-mail">
-                <button>Enviar</button>
+                
             </form>
             <div class="social">
-                <a href="https://twitter.com/JoeHarrym" class="social-link twitter"></a>
-                <a href="#" class="social-link facebook"></a>
-                <a href="https://github.com/JoeMancera" class="social-link github"></a>
-                <a href="https://www.instagram.com/joeharrym/" class="social-link instagram"></a>
+                <a target="_blank" href="https://twitter.com/JoeHarrym" class="social-link twitter"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/joemancera" class="social-link linkedin"></a>
+                <a target="_blank" href="https://github.com/JoeMancera" class="social-link github"></a>
+                <a target="_blank" href="https://www.instagram.com/joeharrym/" class="social-link instagram"></a>
             </div>
         </div>
     </section>
@@ -166,7 +162,7 @@
             <div>Desinged by <a target="_blank" href="https://instagram.com/joeharrym">@joeharrym</a></div>
         </div>
     </footer>
-    <link async rel="stylesheet" href="css/estilos.min.css">
+    <link async rel="stylesheet" href="css/estilos.css">
     <link async rel="stylesheet" href="css/icons.css">
     <script>
         const menu = document.querySelector('.menu');
