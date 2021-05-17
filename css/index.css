@@ -10,6 +10,7 @@
 @import "./css/wrapper.css";
 @import "./css/hero.css";
 @import "./css/buttons.css";
+@import "./css/aboutme.css";
 /*------ Variables ------*/
 :root{
     /*------ Colors ------*/
@@ -50,4 +51,13 @@ h1{
 h2{
     font: var(--headline2);
     text-transform: uppercase;
+    padding-block-start: 8px;
+    padding-block-end: 8px;
+    letter-spacing: .2em;
+}
+
+.sub-title{
+    padding: 0 0 0 18px;
+    border-left-style: solid;
+    border-left-color: #3C7BCC;
 }
