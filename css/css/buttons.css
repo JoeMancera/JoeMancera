@@ -1,0 +1,19 @@
+.btn{
+    font: var(--button);
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+}
+
+.btn-primary{
+    background-color: var(--primary1);
+    color: var(--withe);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary2);
+    color: var(--black);
+    border: none;
+}

@@ -1,0 +1,53 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import "./css/header.css";
+@import "./css/wrapper.css";
+@import "./css/hero.css";
+@import "./css/buttons.css";
+/*------ Variables ------*/
+:root{
+    /*------ Colors ------*/
+    --black: #060609;
+    --withe: #F2F2F2;
+    --gray: #737D82;
+    --primary1: #3C7BCC;
+    --primary2: #4FC9FE;
+    /*------ Fonts ------*/
+    --font-primary: 'KoHo', sans-serif;
+    --font-secondary: 'Roboto Mono', monospace;;
+    --headline1: 400 32px/41.6px var(--font-primary);
+    --headline2: 200 24px/31.2px var(--font-primary);
+    --headline3: 200 24px/31.2px var(--font-primary);
+    --headline4: 200 34px/55px var(--font-primary);
+    --headline5: 200 24px/38px var(--font-primary);
+
+    --body1: 400 16px/19px var(--font-secondary);
+
+    --button: 400 18px/23px var(--font-primary);
+    /*------ Numbers ------*/
+    --letter-spacing: 0.2em;
+}
+
+body{
+    background: var(--black);
+    min-block-size: 100vh;
+    font: var(--body1);
+    color: var(--withe);
+    margin: 0;
+}
+
+h1{
+    font: var(--headline1);
+    text-transform: uppercase;
+}
+
+h2{
+    font: var(--headline2);
+    text-transform: uppercase;
+}

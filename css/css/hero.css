@@ -1,0 +1,36 @@
+.hero-hello{
+    font: var(--headline2);
+}
+.hero img{
+    max-inline-size: 100vw;
+}
+.hero-title{
+    max-inline-size: 110px;
+    position: absolute;
+    top: 235px;
+    left: 32px;
+}
+
+.hero-text{
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+}
+
+.hero-text p{
+    margin-top: 34px;
+    padding: 0 0 0 18px;
+    border-left-style: solid;
+    border-left-color: #3C7BCC;
+}
+
+.hero .social{
+    margin-top: 32px;
+    min-inline-size: 195px;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+}
+
+.hero-curriculum, .hero-arrow{
+    margin-block-start: 32px;
+    text-align: center;
+}

@@ -1,207 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="¡Hola! soy Joe Mancera Desarrollador Web Casi unicornio tech... Un unicornio en formación"/>
+    <meta name="description" content="My name is Joe Mancera. I’m from Colombia and I’m backend developer but i like frontend too. I’m so dedicate and to my work and with 5 years of experience I hope convert in Full stack dev."/>
     <meta name="keywords" content="Joe Mancera, joe mancera, Joe Harry Mancera, joe harry mancera, desarrollador web"/>
     <meta name="author" content="Joe Mancera" />
     <meta name="copyright" content="Joe Mancera" />
-    <title>Joe Mancera | Desarrollador Web</title>
+    <title>Joe Mancera | Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400;700&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<style>
-    :root{--dark:#000D33;--dark-trns:rgba(0,13,51,0.8);--light:#D9D9D9;--gray:#A6A6A6;--sgray:#595959;--black:#313337;--white:#fafafa;--normal:12px;--title-size:23px;--space:10px;--space-2:20px;--font-family-title:'Allerta Stencil',system-ui;--font-family:Roboto,system-ui}html{background-color:var(--white)}body{font-family:var(--font-family);margin:0}h1,h2,h3{font-family:var(--font-family-title);font-weight:400}h1{color:var(--white);font-size:32px;letter-spacing:-.2px;line-height:1.5em;margin:0;max-width:500px}h2{color:var(--dark);text-transform:uppercase;font-family:var(--font-family);font-weight:700;font-size:24px;margin-bottom:40px}h1 strong{color:var(--light)}ol{margin:0;padding:0;list-style:none}figure{margin:0}.burger-button{width:40px;height:40px;border-radius:50%;background-color:var(--dark-trns);color:var(--white);display:none;align-items:center;justify-content:center;position:fixed;z-index:4;left:.5em;top:.5em}.container{max-width:1080px;flex:1;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit;padding:0 .5em}.header{height:70px;align-items:center;background-color:var(--dark);color:var(--white);display:flex;justify-content:space-between;flex-wrap:wrap}.header a{color:var(--white);text-decoration:none;display:flex;align-items:center;height:inherit;padding:0 10px}.header ol{display:flex;height:inherit}.header ol li{height:inherit;display:flex;align-items:center}.menu{height:inherit}.hero{align-items:center;background:linear-gradient(var(--dark),var(--dark-trns));justify-content:space-between;display:flex;height:300px;flex-wrap:wrap}.hero-image{-webkit-filter:contrast(80%);filter:contrast(145%);object-fit:cover;border-radius:15px}.hero-image-2{display:none;border:2px solid var(--light)}.my-self{padding:20px}.my-selfDescription{font-size:18px;border:1px solid var(--gray);padding:1em;border-radius:10px}.portfolio{background-color:var(--white);padding:20px}.project{background:var(--white);border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.project-details{width:50%}.project-title{font-size:30px;margin-top:0;margin-bottom:10px}.project-image-container{width:50%}.project-image-container img{max-width:100%}@media screen and (max-width:1023px){h1{color:var(--white);text-shadow:1px 2px 2px var(--dark);font-size:2em;z-index:2;width:100%}h1 strong{text-shadow:initial}.hero{height:auto;position:relative;overflow:hidden;padding:2em;justify-content:space-evenly}.hero-image{display:none}.hero-image-2{max-width:200px;max-height:200px;object-fit:cover;border-radius:100%;display:inline}.portfolio,.my-self{padding:0}}@media screen and (max-width:840px){.hero-image-2{max-width:170px;max-height:170px}h1{font-size:1.5em}}@media screen and (max-width:767px){h1{font-size:20px;max-width:350px}h2{font-size:1em;margin:.8em 0}.burger-button{display:flex}.header{display:block;height:auto}.header ol{display:block}.header ol li{height:50px;display:initial}.header a{justify-content:center;height:38px;font-size:2em;text-decoration:underline;margin-bottom:.5em}.header .logo{text-align:center}.menu{position:fixed;background-color:var(--dark-trns);z-index:3;top:0;left:-100vw;width:100vw;bottom:0;display:flex;align-items:center;justify-content:center}.hero{padding:8px}.hero-image-2{max-width:100px;max-height:100px}.my-selfDescription{font-size:.8em}.project{display:block}.project-image-container{width:auto;text-align:center}.project-details{width:auto}.project-title{font-size:1.5em;margin-bottom:.3em}}@media screen and (max-width:490px){h1{display:none}.my-selfDescription{font-size:.8em}.project-details{font-size:14px}}
-</style>
 <body>
-    <span class="icon-menu burger-button" id=burger-menu></span>
     <header class="header">
-        <div class="container" id="head">
-            <figure class="logo">
-                <img height="50px" src="images/logo.png" alt="Logo JoeMancera" />
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a class="link" href="#quien-soy">¿Quién Soy?</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contacto">Trabajemos Juntos</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h1>
-                ¡Hola! soy <strong>Joe Mancera</strong>  <br/>Desarrollador Web <br>Casi <strong>unicornio</strong> tech...<br/> Un unicornio en formación
-            </h1>
-            <img class="hero-image" src="images/hero.png" alt="Imagen de portada" width="500" height="300" />
-            <img class="hero-image-2" src="images/hero2.jpg" alt="Imagen de portada" width="500" height="300" />
-        </div>
-    </section>
-    <section id="quien-soy" class="my-self">
-        <div class="container">
-            <h2>¿Quién soy?</h2>
-            <article class="my-selfDescription">
-                <p>
-                    En gran parte, he sido desarrollador. Empecé en el año de 2015 trabajando en una pequeña empresa de software lo cual me ayudó a prepararme para grandes retos. Ahora trabajo en una gran consultora. <br><br>
-                    Me considero un posible puente en equipos de desarrollo y diseño ya que tengo la habilidad de aprender bastante rápido. Me gusta lo dinámico y lo que requiera cierto nivel de exigencia. <br><br>
-                    Creo en que gracias a la tecnología podamos ayudar a nuestro planeta, ayudar a nuestros estilos de vida a ser más sanos. Me gusta imaginar un futuro en el que la tecnología sea nuestra amiga.
-                </p>
-            </article>
-        </div>
-    </section>
-    <section id="portafolio" class="portfolio">
-        <div class="container">
-            <h2>Portafolio (Proyectos Destacados)</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Shopping Car</h3>
-                    <h6 class="project-course">C# / .NET</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong>  Marzo de 2017</small></p>
-                    <p class="project-url"><small><strong>Puedes verlo en:</strong> <a target="_blank" href="http://shoppingwebcar.apphb.com">AppHarbor.com</a> o en <a href="https://github.com/JoeMancera/shoppingcar">GitHub</a> </small></p>
-                    <p class="project-description"> 
-                        Este proyecto lo realicé para la prueba de ingreso para una empresa. Consistía en realizar un proyecto en donde se consumieran servicios web desde la parte web. <br>
-                        Lo más dificil fue implementar los servicios web ya que no sabia como hacerlos. La parte más facil fue hacer el frontend de la aplicación (MVC).
-                    </p>
-                </div>
-                <figure class="project-image-container">
-                    <img class="project-image" src="images/shoppingcar-cs-net.png" alt="Proyecto 1" width="500" />
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Demo Techedge</h3>
-                    <h6 class="project-course">HTML - CSS - Javascript</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong>  Octubre de 2018</small></p>
-                    <p class="project-url"><small><strong>Puedes verlo en:</strong>  <a href="https://github.com/JoeMancera/DemoTechedge">GitHub</a></small></p>
-                    <p class="project-description"> 
-                        Este proyecto lo hice para una demo. el propósito era mostrar que la plataforma OpenText se puede complementar con aplicaciones externas, todo, por medio de sus APIs REST.
-                    </p>
-                </div>
-                <figure class="project-image-container">
-                    <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto 1" width="500" />
-                </figure>
-            </article>
-        </div>
-    </section>
-    <section id="habilidades" class="skill-list">
-        <div class="container">
-            <h2 class="skills-title">Mis Skills</h2>
-            <div class="skills">
-                <article class="skill">
-                    <figure class="skill-image-container">
-                        <img class="skill-image" src="images/desarrollo-web.png" title="Photo by Joshua Aragon on Unsplash" alt="Img Skill 1" width="500" />
-                    </figure>
-                    <div class="skill-detail">
-                        <h3 class="skill-title">Desarrollo Web</h3>
-                        <p class="skill-description">
-                            El desarrollo web lo empecé desde que estaba en la universidad y le tome gran cariño. Se me facilita usar frameworks como bootstrap o realizar estilos a medida.
-                        </p>
-                        <a target="_blank" class="skill-url" href="https://platzi.com/@joemancera/curso/1350-html5-css3/diploma/detalle/">Ver Certificado</a>
-                    </div>
-                </article>
-                <article class="skill">
-                    <figure class="skill-image-container">
-                        <img class="skill-image" src="images/wop.png" title="Photo by Erik Odiin on Unsplash" alt="Img Skill 1" width="500" />
-                    </figure>
-                    <div class="skill-detail">
-                        <h3 class="skill-title">Optimización de Carga de WebSites</h3>
-                        <p class="skill-description">
-                            En esta era móvil y de conexiones hay que tener en cuenta la carga de los sitios. No siempre tenemos la misma velociad, por eso este curso es un bonus para mis habilidades.
-                        </p>
-                        <a target="_blank" class="skill-url" href="#">Ver Certificado</a>
-                    </div>
-                </article>
-                <article class="skill">
-                    <figure class="skill-image-container">
-                        <img class="skill-image" src="images/git-github.png" title="Photo by Jacob Miller on Unsplash" alt="Img Skill 1" width="500" />
-                    </figure>
-                    <div class="skill-detail">
-                        <h3 class="skill-title">Git y GitHub</h3>
-                        <p class="skill-description">
-                            En esta era gobernada por código y tecnología es imposible manejar proyectos sin una exelente herramienta como Git y GitHub para compartirlo.
-                        </p>
-                        <a target="_blank" class="skill-url" href="https://platzi.com/@joemancera/curso/1390-optimizacion-web/diploma/detalle/">Ver Certificado</a>
-                    </div>
-                </article>
-                <article class="skill">
-                    <figure class="skill-image-container">
-                        <img class="skill-image" src="images/amateur.png" alt="Img Skill 1" width="500" />
-                    </figure>
-                    <div class="skill-detail">
-                        <h3 class="skill-title">Fotografía Amateur</h3>
-                        <p class="skill-description">
-                            Me gusta tomar fotos casi en cualquier lugar. creo que es una forma artistica de guardar un punto de vista, la belleza y simpleza de un lugar.
-                        </p>
-                        <a target="_blank" class="skill-url" href="https://500px.com/joeharrym">Ver 500px</a>
-                    </div>
-                </article>
-            </div>        
-        </div>
-    </section>
-    <section id="contacto" class="contact">
-        <div class="container">
-            <form class="form-email" action="">
-                <h3>¿Creamos algo juntos?</h3>
-                
-            </form>
-            <div class="social">
-                <a target="_blank" href="https://twitter.com/JoeHarrym" class="social-link twitter"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/joemancera" class="social-link linkedin"></a>
-                <a target="_blank" href="https://github.com/JoeMancera" class="social-link github"></a>
-                <a target="_blank" href="https://www.instagram.com/joeharrym/" class="social-link instagram"></a>
+        <div class="wrapper">
+            <div class="head-content">
+                <img width="35px" src="./img/logo-j.svg" alt="Joe Mancera logo" srcset="">
             </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div>Gracias a <a target="_blank" href="https://platzi.com"><img width="80px" src="images/platzi.png" alt="platzi"></a> </div>
-            <div>Desinged by <a target="_blank" href="https://instagram.com/joeharrym">@joeharrym</a></div>
+    </header>
+    <section aria-label="main" class="hero" id="main">
+        <img width="375px" src="./img/hero.png" alt="Joe Mancera" srcset="">
+        <div class="hero-title">
+            <h1>
+                <span class="hero-hello">Hello!</span>
+                <span>I'm Joe</span>
+            </h1>
         </div>
-    </footer>
-    <link async rel="stylesheet" href="css/estilos.css">
-    <link async rel="stylesheet" href="css/icons.css">
-    <script>
-        const menu = document.querySelector('.menu');
-        const burger = document.querySelector('#burger-menu');
-        
-        const ipad = window.matchMedia('screen and (max-width: 767px)');
-        
-        if(ipad.matches)
-        burger.addEventListener('click', ActMenu);        
-        
-        ipad.addListener(changeScreen);
-        
-        function changeScreen(event){
-            if (event.matches) {
-                console.log('True');
-                burger.addEventListener('click', ActMenu);
-            } else {
-                console.log('False');
-                burger.removeEventListener('click', ActMenu);
-            }
-        }
-        
-        function ActMenu(){
-            if(menu.classList.contains('is-active')){
-                menu.classList.remove('is-active');
-            } else {
-                menu.classList.add('is-active');
-            }
-        }
-        
-    </script>
-    <link async href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-    <link async href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <div class="hero-text">
+            <p>
+                Developer who loves to implement designs that inspire and attract people.
+            </p>
+        </div>
+        <div class="social">
+            <a href="#"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
+            <a href="#"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
+            <a href="#"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
+            <a href="#"><img src="./img/button_ML.svg" alt="Mail" srcset=""></a>
+        </div>
+        <div class="hero-curriculum">
+            <button class="btn btn-primary">Curriculum</button>
+        </div>
+        <div class="hero-arrow">
+            <img src="./img/arrow-down.svg" alt="arrow" srcset="">
+        </div>
+    </section>
 </body>
 </html>

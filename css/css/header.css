@@ -1,0 +1,9 @@
+.header{
+    block-size: 50px;
+    align-items: center;
+}
+.head-content {
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+}
