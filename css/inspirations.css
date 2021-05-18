@@ -1,0 +1,19 @@
+.inspiration-item{
+    display: flex;
+    padding-block-start: 32px;
+}
+
+.inspiration-description{
+    padding-inline-start: 16px;
+}
+
+.inspiration-name h3{
+    font: var(--headline4);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.inspiration-do p{
+    margin: 0;
+    margin-block-start: 5px;
+}

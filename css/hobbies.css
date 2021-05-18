@@ -1,0 +1,6 @@
+.hobbies-list li {
+  list-style-image: url(../img/li-item.svg);
+  font: var(--headline4);
+  text-transform: uppercase;
+  padding-block-start: 32px;
+}
