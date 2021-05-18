@@ -8,14 +8,14 @@
 
 .btn-primary{
     background-color: var(--primary1);
-    border: solid var(--primary1);
+    border: 2px solid var(--primary1);
     color: var(--withe);
 }
 
 .btn-primary:hover{
     background-color: var(--primary2);
     color: var(--black);
-    border: none;
+    border: 2px solid var(--primary1);
 }
 
 .btn-secondary{
@@ -27,4 +27,5 @@
 .btn-secondary:hover{
     background-color: var(--primary2);
     color: var(--black);
+    border: 2px solid var(--primary1);
 }
