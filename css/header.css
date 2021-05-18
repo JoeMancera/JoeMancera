@@ -8,3 +8,36 @@
     align-items: auto;
     padding: 8px;
 }
+
+.menu{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .head-content{
+        justify-content: space-between;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menu ul{
+        display: flex;
+        list-style: none;
+        margin:0px;
+        gap:40px;
+        margin-block-start: 6px;
+    }
+
+    .menu ul a {
+        text-decoration: none;
+        color: var(--white);
+        font: var(--menu);
+        text-transform: uppercase;
+    }
+    
+    .menu ul a.is-active{
+        color: var(--purple);
+    }
+}

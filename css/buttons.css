@@ -15,7 +15,7 @@
 .btn-primary:hover{
     background-color: var(--primary2);
     color: var(--black);
-    border: 2px solid var(--primary1);
+    border: 2px solid var(--primary2);
 }
 
 .btn-secondary{

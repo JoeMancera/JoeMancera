@@ -37,6 +37,7 @@
     --body1: 400 16px/19px var(--font-secondary);
 
     --button: 400 18px/23px var(--font-primary);
+    --menu: 400 16px/20.8px var(--font-primary);
     /*------ Numbers ------*/
     --letter-spacing: 0.2em;
 }
