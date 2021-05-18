@@ -6,11 +6,12 @@
 #  \___/____/____/··
 #  ·················
 */
-@import "./css/header.css";
-@import "./css/wrapper.css";
-@import "./css/hero.css";
-@import "./css/buttons.css";
-@import "./css/aboutme.css";
+@import "./header.css";
+@import "./wrapper.css";
+@import "./hero.css";
+@import "./buttons.css";
+@import "./aboutme.css";
+@import "./skills.css";
 /*------ Variables ------*/
 :root{
     /*------ Colors ------*/
@@ -24,7 +25,7 @@
     --font-secondary: 'Roboto Mono', monospace;;
     --headline1: 400 32px/41.6px var(--font-primary);
     --headline2: 200 24px/31.2px var(--font-primary);
-    --headline3: 200 24px/31.2px var(--font-primary);
+    --headline3: 700 18px/23.4px var(--font-primary);
     --headline4: 200 34px/55px var(--font-primary);
     --headline5: 200 24px/38px var(--font-primary);
 
@@ -54,6 +55,8 @@ h2{
     padding-block-start: 8px;
     padding-block-end: 8px;
     letter-spacing: .2em;
+    margin-block-start: 32px;
+    margin-block-end: 32px;
 }
 
 .sub-title{

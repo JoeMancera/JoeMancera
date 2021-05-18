@@ -20,7 +20,7 @@
 .hero-text p{
     padding: 0 0 0 18px;
     border-left-style: solid;
-    border-left-color: #3C7BCC;
+    border-left-color: var(--primary1);
 }
 
 .hero .social{
