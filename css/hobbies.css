@@ -4,3 +4,14 @@
   text-transform: uppercase;
   margin-block-start: 32px;
 }
+
+@media screen and (min-width: 768px){
+  .hobbies-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .hobbies-list li{
+      min-width: 215px;
+  }
+}
