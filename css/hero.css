@@ -43,6 +43,7 @@
 @media screen and (min-width: 768px){
     .hero{
         display: flex;
+        padding-block-end: 32px;
     }
 
     .hero-title{

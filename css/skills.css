@@ -22,3 +22,16 @@
     border-top-color: var(--gray);
     border-radius: 2px;
 }
+
+
+@media screen and (min-width: 768px){
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill-item{
+        max-width: 310px;
+        margin-inline-end: 32px;
+    }
+}
