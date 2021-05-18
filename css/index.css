@@ -12,6 +12,7 @@
 @import "./buttons.css";
 @import "./aboutme.css";
 @import "./skills.css";
+@import "./projects.css";
 /*------ Variables ------*/
 :root{
     /*------ Colors ------*/
@@ -26,8 +27,9 @@
     --headline1: 400 32px/41.6px var(--font-primary);
     --headline2: 200 24px/31.2px var(--font-primary);
     --headline3: 700 18px/23.4px var(--font-primary);
-    --headline4: 200 34px/55px var(--font-primary);
-    --headline5: 200 24px/38px var(--font-primary);
+    --headline4: 400 18px/23.4px var(--font-primary);
+    --headline5: 200 34px/55px var(--font-primary);
+    --headline6: 200 24px/38px var(--font-primary);
 
     --body1: 400 16px/19px var(--font-secondary);
 
