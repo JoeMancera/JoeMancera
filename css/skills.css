@@ -28,10 +28,9 @@
     .skills{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
     .skill-item{
-        max-width: 310px;
-        margin-inline-end: 32px;
+        max-width: 325px;
     }
 }
