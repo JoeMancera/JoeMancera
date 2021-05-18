@@ -17,8 +17,28 @@ input, textarea{
     border: 2px solid var(--primary1);
 }
 
-form div{
+.form div{
     margin-block-start: 32px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form div:nth-child(1), .form div:nth-child(2){
+        min-width: 340px;
+    }
+
+    .form div:nth-child(3){
+        min-width: 100%;
+    }
+
+    .form div:nth-child(4){
+        margin: 0 auto;
+        margin-block-start: 32px;
+    }
 }

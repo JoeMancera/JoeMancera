@@ -17,3 +17,18 @@
     margin: 0;
     margin-block-start: 5px;
 }
+
+@media screen and (min-width: 768px){
+    .inspirations{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .inspiration-item{
+        min-width: 325px;
+    }
+
+    .project-description{
+        min-block-size: 170px;
+    }
+}
