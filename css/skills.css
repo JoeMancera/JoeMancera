@@ -1,3 +1,6 @@
+.skill-item{
+    padding-block-start: 12px;
+}
 .skill-title h3{
     font: var(--headline3);
     text-transform: uppercase;
