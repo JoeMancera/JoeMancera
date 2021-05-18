@@ -1,0 +1,24 @@
+label{
+    font: var(--headline4);
+    text-transform: uppercase;
+    color: var(--primary2);
+    min-inline-size: 100%;
+}
+
+input, textarea{
+    font: var(--headline4);
+    color: var(--gray);
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin-block-start: 18px;
+    border-radius: 2px;
+    border: 2px solid var(--primary1);
+}
+
+form div{
+    margin-block-start: 32px;
+    display: flex;
+    flex-direction: column;
+}

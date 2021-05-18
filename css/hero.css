@@ -23,7 +23,7 @@
     border-left-color: var(--primary1);
 }
 
-.hero .social{
+.social{
     margin-block-start: 38px;
     min-inline-size: 195px;
     padding-inline-start: 32px;

@@ -15,6 +15,8 @@
 @import "./projects.css";
 @import "./hobbies.css";
 @import "./inspirations.css";
+@import "./form.css";
+@import "./footer.css";
 /*------ Variables ------*/
 :root{
     /*------ Colors ------*/
@@ -30,8 +32,7 @@
     --headline2: 200 24px/31.2px var(--font-primary);
     --headline3: 700 18px/23.4px var(--font-primary);
     --headline4: 400 18px/23.4px var(--font-primary);
-    --headline5: 200 34px/55px var(--font-primary);
-    --headline6: 200 24px/38px var(--font-primary);
+    --headline5: 400 16px/20.8px var(--font-primary);
 
     --body1: 400 16px/19px var(--font-secondary);
 

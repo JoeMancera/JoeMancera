@@ -1,0 +1,17 @@
+.footer{
+    min-block-size: 58px;
+    background-color: var(--primary2);
+    margin-block-start: 32px;
+}
+
+.footer p{
+    margin: 0px;
+    padding-block-start: 10px;
+    font: var(--headline5);
+    color: var(--withe);
+    text-align: center;
+}
+
+.footer p:nth-child(1){
+    text-transform: uppercase;
+}
