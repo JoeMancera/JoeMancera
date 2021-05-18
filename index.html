@@ -22,11 +22,11 @@
                 <div>
                     <nav aria-label="main-navigation" class="menu">
                         <ul>
-                            <li><a href="#">Hello</a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Conctact</a></li>
+                            <li><a href="#main">Hello</a></li>
+                            <li><a href="#about-me">About me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Conctact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -34,26 +34,30 @@
         </div>
     </header>
     <section aria-label="main" class="hero" id="main">
-        <img width="375px" src="./img/hero.png" alt="Joe Mancera" srcset="">
+        <img class="hero-image" src="./img/hero.png" alt="Joe Mancera" srcset="">
         <div class="hero-title">
             <h1>
                 <span class="hero-hello">Hello!</span>
-                <span>I'm Joe</span>
+                <div class="my-name">
+                    <span>I'm Joe <span class="mancera">Mancera</span></span>
+                </div>
             </h1>
         </div>
-        <div class="hero-text">
-            <p>
-                Developer who loves to implement designs that inspire and attract people.
-            </p>
-        </div>
-        <div class="social">
-            <a href="#"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
-            <a href="#"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
-            <a href="#"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
-            <a href="#"><img src="./img/button_ML.svg" alt="Mail" srcset=""></a>
-        </div>
-        <div class="hero-curriculum">
-            <button class="btn btn-primary">Curriculum</button>
+        <div class="hero-items">
+            <div class="hero-text">
+                <p>
+                    Developer who loves to implement designs that inspire and attract people.
+                </p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
+                <a href="#"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
+                <a href="#"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
+                <a href="#"><img src="./img/button_ML.svg" alt="Mail" srcset=""></a>
+            </div>
+            <div class="hero-curriculum">
+                <button class="btn btn-primary">Curriculum</button>
+            </div>
         </div>
         <div class="hero-arrow">
             <img src="./img/arrow-down.svg" alt="arrow" srcset="">
@@ -68,7 +72,7 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="sub-title">
                 <h2>Skills</h2>
             </div>
@@ -228,7 +232,7 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="sub-title">
                 <h2>Projects</h2>
             </div>
@@ -343,7 +347,7 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="sub-title">
                 <h2>Contact me</h2>
             </div>

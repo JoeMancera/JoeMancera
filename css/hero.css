@@ -1,14 +1,19 @@
 .hero-hello{
     font: var(--headline2);
 }
-.hero img{
+.hero-image{
     max-inline-size: 100vw;
+    width: 375px;
 }
 .hero-title{
     max-inline-size: 110px;
     position: absolute;
     top: 235px;
     left: 32px;
+}
+
+.mancera{
+    display: none;
 }
 
 .hero-text{
@@ -33,4 +38,47 @@
 .hero-curriculum, .hero-arrow{
     margin-block-start: 32px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        display: flex;
+    }
+
+    .hero-title{
+        min-inline-size: 255px;
+        top: 35px;
+        left: 32px;
+    }
+
+    .hero-hello{
+        max-inline-size: 245px;
+    }
+
+    .my-name{
+        display: ruby;
+    }
+
+    .mancera{
+        display: block;
+    }
+
+    .hero-text{
+        order: 1;
+        max-inline-size: 450px;
+    }
+
+    .hero-image{
+        order: 2;
+        max-inline-size: 450px;
+        width: 400px;
+    }
+
+    .hero-items{
+        margin-block-start: 100px;
+    }
+
+    .hero-arrow{
+        display: none;
+    }
 }
