@@ -7,11 +7,17 @@
 
 @media screen and (min-width: 768px){
   .hobbies-list{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .hobbies-list li{
-      min-width: 215px;
+    min-width: 215px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .hobbies-list li{
+    min-width: 315px;
   }
 }

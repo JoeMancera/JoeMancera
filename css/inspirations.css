@@ -3,6 +3,10 @@
     padding-block-start: 32px;
 }
 
+.inspiration-item img{
+    height: 50px;
+}
+
 .inspiration-description{
     padding-inline-start: 16px;
 }
@@ -27,8 +31,18 @@
     .inspiration-item{
         min-width: 325px;
     }
+}
 
-    .project-description{
-        min-block-size: 170px;
+@media screen and (min-width: 1024px){
+    .inspiration-item img{
+        height: 100px;
+    }
+
+    .inspiration-item{
+        min-width: 525px;
+    }
+
+    .inspiration-description{
+        padding-block-start: 16px;
     }
 }
