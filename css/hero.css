@@ -45,41 +45,61 @@
         display: flex;
         padding-block-end: 32px;
     }
-
+    
     .hero-title{
         min-inline-size: 255px;
         top: 35px;
         left: 32px;
     }
-
+    
     .hero-hello{
         max-inline-size: 245px;
     }
-
+    
     .my-name{
         display: ruby;
     }
-
+    
     .mancera{
         display: block;
     }
-
+    
     .hero-text{
         order: 1;
         max-inline-size: 450px;
     }
-
+    
     .hero-image{
         order: 2;
         max-inline-size: 450px;
         width: 400px;
     }
-
+    
     .hero-items{
         margin-block-start: 100px;
     }
-
+    
     .hero-arrow{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .hero{
+        max-inline-size: 1158px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .hero-title{
+        max-height: 115px;
+        padding-inline-end: 28px;
+        padding-inline-start: 28px;
+        margin-inline-start: 28px;
+    }
+    
+    .hero-text{
+        padding: 0px;
     }
 }
