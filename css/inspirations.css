@@ -1,0 +1,48 @@
+.inspiration-item{
+    display: flex;
+    padding-block-start: 32px;
+}
+
+.inspiration-item img{
+    height: 50px;
+}
+
+.inspiration-description{
+    padding-inline-start: 16px;
+}
+
+.inspiration-name h3{
+    font: var(--headline4);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.inspiration-do p{
+    margin: 0;
+    margin-block-start: 5px;
+}
+
+@media screen and (min-width: 768px){
+    .inspirations{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .inspiration-item{
+        min-width: 325px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .inspiration-item img{
+        height: 100px;
+    }
+    
+    .inspiration-item{
+        min-width: 525px;
+    }
+    
+    .inspiration-description{
+        padding-block-start: 16px;
+    }
+}

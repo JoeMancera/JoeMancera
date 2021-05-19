@@ -1,0 +1,47 @@
+.project-item{
+    padding-block-start: 32px;
+}
+.project-title{
+    height: 30px;
+    background-image: url(../img/bkg-project-title.svg);
+    background-repeat: no-repeat;
+}
+.project-title h3{
+    font: var(--headline4);
+    text-transform: uppercase;
+    color: var(--black);
+    padding-inline-start: 12px;
+    padding-block-start: 3px;
+}
+
+.project-description{
+    margin-block-start: 23px;
+    padding-inline-start: 12px;
+    padding-block-start: 12px;
+    padding-block-end: 8px;
+    border: 1px;
+    border-right-style: solid;
+    border-right-color: var(--primary2);
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary2);
+    border-radius: 2px;
+}
+
+.project-description button{
+    margin-block-start: 32px;
+}
+
+@media screen and (min-width: 768px){
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-item{
+        max-width: 325px;
+    }
+
+    .project-description{
+        min-block-size: 170px;
+    }
+}

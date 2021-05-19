@@ -1,0 +1,36 @@
+.skill-item{
+    padding-block-start: 12px;
+}
+.skill-title h3{
+    font: var(--headline3);
+    text-transform: uppercase;
+    background-color: var(--gray);
+    max-width: min-content;
+    border-radius: 2px;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+}
+
+.skill-description p{
+    padding-inline-start: 12px;
+    padding-block-start: 12px;
+    padding-block-end: 8px;
+    border: 1px;
+    border-left-style: solid;
+    border-left-color: var(--gray);
+    border-top-style: solid;
+    border-top-color: var(--gray);
+    border-radius: 2px;
+}
+
+
+@media screen and (min-width: 768px){
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skill-item{
+        max-width: 325px;
+    }
+}

@@ -1,0 +1,73 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import "./header.css";
+@import "./wrapper.css";
+@import "./hero.css";
+@import "./buttons.css";
+@import "./aboutme.css";
+@import "./skills.css";
+@import "./projects.css";
+@import "./hobbies.css";
+@import "./inspirations.css";
+@import "./form.css";
+@import "./footer.css";
+/*------ Variables ------*/
+:root{
+    /*------ Colors ------*/
+    --black: #060609;
+    --black-trns: #060609bd;
+    --withe: #F2F2F2;
+    --gray: #737D82;
+    --primary1: #3C7BCC;
+    --primary2: #4FC9FE;
+    /*------ Fonts ------*/
+    --font-primary: 'KoHo', sans-serif;
+    --font-secondary: 'Roboto Mono', monospace;;
+    --headline1: 400 32px/41.6px var(--font-primary);
+    --headline2: 200 24px/31.2px var(--font-primary);
+    --headline3: 700 18px/23.4px var(--font-primary);
+    --headline4: 400 18px/23.4px var(--font-primary);
+    --headline5: 400 16px/20.8px var(--font-primary);
+
+    --body1: 400 16px/19px var(--font-secondary);
+
+    --button: 400 18px/23px var(--font-primary);
+    --menu: 400 16px/20.8px var(--font-primary);
+    /*------ Numbers ------*/
+    --letter-spacing: 0.2em;
+}
+
+body{
+    background: var(--black);
+    min-block-size: 100vh;
+    font: var(--body1);
+    color: var(--withe);
+    margin: 0;
+}
+
+h1{
+    font: var(--headline1);
+    text-transform: uppercase;
+}
+
+h2{
+    font: var(--headline2);
+    text-transform: uppercase;
+    padding-block-start: 8px;
+    padding-block-end: 8px;
+    letter-spacing: .2em;
+    margin-block-start: 32px;
+    margin-block-end: 0px;
+}
+
+.sub-title{
+    padding: 0 0 0 18px;
+    border-left-style: solid;
+    border-left-color: #3C7BCC;
+}
