@@ -267,7 +267,7 @@
                     <p>
                         This web app was created to use the REST API services that have OpenText ContentServer to externs apps.
                     </p>
-                    <a target="_blank" href="https://github.com/JoeMancera/DemoTechedge" class="btn btn-secondary">See app</a>
+                    <a target="_blank" href="https://github.com/JoeMancera/DemoTechedge" class="btn btn-primary">See code</a>
                 </div>
             </div>
             <div class="project-item">
@@ -362,23 +362,24 @@
             <h2>Contact me</h2>
         </div>
         <div class="contact" id="contact">
-            <form class="form" action="">
+            <form id="form" class="form" action="https://formspree.io/f/xdoyerpb" method="POST">
                 <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Juanito Pérez">
+                    <label for="name">Name: <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" required>
                 </div>
                 <div>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="juanito@example.com">
+                    <label for="email">Email: <span>*</span></label>
+                    <input type="text" id="email" name="email" placeholder="juanito@example.com" required>
                 </div>
                 <div>
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..."></textarea>
+                    <label for="message">Message: <span>*</span></label>
+                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." required></textarea>
                 </div>
                 <div class="form-submit">
                     <button type="submit" class="btn btn-primary">Send message</button>
                 </div>
             </form>
+            <a href="mailto:joeharrymancera@gmil.com" id="mailto">mail</a>
         </div>
     </div>
     <div class="wrapper">
@@ -397,5 +398,34 @@
             </div>
         </div>
     </footer>
+    <script>
+        const $formContact = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#mailto')
+
+        $formContact.addEventListener('submit', handleSubmiit)
+        
+        async function handleSubmiit(event) {
+            event.preventDefault()
+
+            const form = new FormData(this)
+            
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+
+            if(response.ok){
+                this.reset()
+                alert("Thanks for contact me, I contact you soon.")
+            } else {
+                $buttonMailto.setAttribute('href', `mailto:joeharrymancera@gmail.com?subject=Te contacta: ${form.get('name')}-${form.get('email')}&body=${form.get('message')}`)
+                $buttonMailto.click()
+                this.reset()
+            }
+        }
+    </script>
 </body>
 </html>
