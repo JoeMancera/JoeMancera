@@ -44,6 +44,6 @@
     }
     
     .menu ul a:hover{
-        color: var(--primary1);
+        color: var(--primary2);
     }
 }

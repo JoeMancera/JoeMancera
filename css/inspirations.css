@@ -7,6 +7,10 @@
     height: 50px;
 }
 
+.inspiration-item img:hover{
+    filter: drop-shadow(0 0 5px var(--primary2));
+}
+
 .inspiration-description{
     padding-inline-start: 16px;
 }
