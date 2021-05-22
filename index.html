@@ -419,7 +419,7 @@
 
             if(response.ok){
                 this.reset()
-                alert("Gracias por contactarme, te escribiré pronto.")
+                alert("Thanks for contact me, I contact you soon.")
             } else {
                 $buttonMailto.setAttribute('href', `mailto:joeharrymancera@gmail.com?subject=Te contacta: ${form.get('name')}-${form.get('email')}&body=${form.get('message')}`)
                 $buttonMailto.click()
