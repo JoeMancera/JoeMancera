@@ -40,6 +40,15 @@
     text-align: center;
 }
 
+@media screen and (min-width: 375px){
+    .hero-image{
+        width: 100vw; /* width of container */
+        height: 340px; /* height of container */
+        object-fit: cover;
+        object-position: 50% 35%; /* try 20px 10px */
+    }
+}
+
 @media screen and (min-width: 768px){
     .hero{
         display: flex;
@@ -90,6 +99,10 @@
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        padding-inline-end: 28px;
+        padding-inline-start: 28px;
+        margin: 0 auto;
     }
     
     .hero-title{
@@ -100,6 +113,7 @@
     }
     
     .hero-text{
+        padding-inline-start: 32px;
         padding: 0px;
     }
 }
