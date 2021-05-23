@@ -23,7 +23,7 @@ input, textarea{
     flex-direction: column;
 }
 
-.form #mailto{
+#mailto{
     opacity: 0;
 }
 
