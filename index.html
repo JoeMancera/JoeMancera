@@ -365,21 +365,21 @@
             <form id="form" class="form" action="https://formspree.io/f/xdoyerpb" method="POST">
                 <div>
                     <label for="name">Name: <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" required>
+                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" aria-label="Name" required>
                 </div>
                 <div>
                     <label for="email">Email: <span>*</span></label>
-                    <input type="text" id="email" name="email" placeholder="juanito@example.com" required>
+                    <input type="text" id="email" name="email" placeholder="juanito@example.com" aria-label="Email address" required>
                 </div>
                 <div>
                     <label for="message">Message: <span>*</span></label>
-                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." required></textarea>
+                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." aria-label="Message" required></textarea>
                 </div>
                 <div class="form-submit">
                     <button type="submit" class="btn btn-primary">Send message</button>
                 </div>
             </form>
-            <a href="mailto:joeharrymancera@gmil.com" id="mailto">mail</a>
+            <a href="mailto:joeharrymancera@gmil.com" id="mailto" aria-hidden="true">mail</a>
         </div>
     </div>
     <div class="wrapper">
