@@ -46,4 +46,9 @@
     .menu ul a:hover{
         color: var(--primary2);
     }
+
+    .menu ul a:focus{
+        outline: none;
+        color: var(--primary2);
+    }
 }
