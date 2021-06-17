@@ -362,30 +362,34 @@
             <h2>Contact me</h2>
         </div>
         <div class="contact" id="contact">
+            <p>You can use this form to send me a message</p>
             <form id="form" class="form" action="https://formspree.io/f/xdoyerpb" method="POST">
                 <div>
                     <label for="name">Name: <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" aria-label="Name" required>
+                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" aria-label="Name" >
+                    <span aria-live="assertive" id="error-name"></span>
                 </div>
                 <div>
                     <label for="email">Email: <span>*</span></label>
-                    <input type="text" id="email" name="email" placeholder="juanito@example.com" aria-label="Email address" required>
+                    <input type="text" id="email" name="email" placeholder="juanito@example.com" aria-label="Email address" >
+                    <span aria-live="assertive" id="error-email"></span>
                 </div>
                 <div>
                     <label for="message">Message: <span>*</span></label>
-                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." aria-label="Message" required></textarea>
+                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." aria-label="Message" ></textarea>
+                    <span aria-live="assertive" id="error-message"></span>
                 </div>
                 <div class="form-submit">
                     <button type="submit" class="btn btn-primary">Send message</button>
                 </div>
             </form>
-            <a href="mailto:joeharrymancera@gmil.com" id="mailto" aria-hidden="true">mail</a>
+            <a href="mailto:joeharrymancera@gmil.com" id="mailto" aria-hidden="true" tabindex="-1">mail</a>
         </div>
     </div>
     <div class="wrapper">
         <div class="social">
             <a target="_blank" title="Go to Joe's GitHub" href="https://github.com/JoeMancera" alt="Go to Joe's GitHub"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
-            <a target="_blank" title="Go to Joe's instagram"" href="https://www.instagram.com/joeharrym/" alt="Go to Joe's instagram"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
+            <a target="_blank" title="Go to Joe's instagram" href="https://www.instagram.com/joeharrym/" alt="Go to Joe's instagram"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
             <a target="_blank" title="Go to Joe's Twitter" href="https://twitter.com/JoeHarrym" alt="Go to Joe's Twitter"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
             <a target="_blank" title="Go to Joe's linkedin" href="https://www.linkedin.com/in/joemancera/" alt="Go to Joe's linkedin"><img src="./img/button_IN.svg" alt="LinkedIn" srcset=""></a>
         </div>
@@ -401,29 +405,46 @@
     <script>
         const $formContact = document.querySelector('#form')
         const $buttonMailto = document.querySelector('#mailto')
-
-        $formContact.addEventListener('submit', handleSubmiit)
         
-        async function handleSubmiit(event) {
-            event.preventDefault()
+        $formContact.addEventListener('submit', handleSubmit)
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
 
-            const form = new FormData(this)
-            
-            const response = await fetch(this.action, {
-                method: this.method,
-                body: form,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
+            const nameFile = document.getElementById('name');
+            const emailFile = document.getElementById('email');
+            const messageFile = document.getElementById('message');
 
-            if(response.ok){
-                this.reset()
-                alert("Thanks for contact me, I contact you soon.")
+            document.getElementById('error-name').innerHTML = "";
+            document.getElementById('error-email').innerHTML = "";
+            document.getElementById('error-message').innerHTML = "";
+
+            if(nameFile.value === ""){
+                document.getElementById('error-name').innerHTML = "The name is required to send the message!";
+            } else if(emailFile.value === ""){
+                document.getElementById('error-email').innerHTML = "The email is required to send the message!";
+            } else if(messageFile.value === "") {
+                document.getElementById('error-message').innerHTML = "The message is required to send the message!";
             } else {
-                $buttonMailto.setAttribute('href', `mailto:joeharrymancera@gmail.com?subject=Te contacta: ${form.get('name')}-${form.get('email')}&body=${form.get('message')}`)
-                $buttonMailto.click()
-                this.reset()
+                document.getElementById('error-name').innerHTML = ""
+                const form = new FormData(this)
+                
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    body: form,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                
+                if(response.ok){
+                    this.reset()
+                    alert("Thanks for contact me, I contact you soon.")
+                } else {
+                    $buttonMailto.setAttribute('href', `mailto:joeharrymancera@gmail.com?subject=Te contacta: ${form.get('name')}-${form.get('email')}&body=${form.get('message')}`)
+                    $buttonMailto.click()
+                    this.reset()
+                }
             }
         }
     </script>

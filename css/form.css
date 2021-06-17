@@ -27,6 +27,10 @@ input, textarea{
     opacity: 0;
 }
 
+#error-name, #error-email{
+    max-width: 340px;
+}
+
 @media screen and (min-width: 768px){
     .form{
         display: flex;
