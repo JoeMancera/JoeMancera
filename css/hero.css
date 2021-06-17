@@ -35,6 +35,14 @@
     padding-inline-end: 32px;
 }
 
+.social a:focus{
+    outline: none;
+}
+
+.social a:focus-within{
+    outline: 2px solid var(--withe);
+}
+
 .hero-curriculum, .hero-arrow{
     margin-block-start: 32px;
     text-align: center;
