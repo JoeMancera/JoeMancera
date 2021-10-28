@@ -8,17 +8,13 @@
     <meta name="keywords" content="Joe Mancera, joe mancera, Joe Harry Mancera, joe harry mancera, desarrollador web"/>
     <meta name="author" content="Joe Mancera" />
     <meta name="copyright" content="Joe Mancera" />
-    <title>Joe Mancera | Developer</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400;700&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Joe Mancera | Web Developer</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="head-content">
-                <img width="35px" src="./img/logo-j.svg" alt="Joe Mancera logo" srcset="">
+                <img width="35px" src="./img/logo.svg" alt="Joe Mancera logo" srcset="">
                 <div>
                     <nav aria-label="main-navigation" class="menu">
                         <ul>
@@ -26,14 +22,13 @@
                             <li><a href="#about-me" alt="Go to about me section">About me</a></li>
                             <li><a href="#skills" alt="Go to skills section">Skills</a></li>
                             <li><a href="#projects" alt="Go to projects section">Projects</a></li>
-                            <li><a href="#contact" alt="Go to contact section">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <section aria-label="main" class="hero" id="main">
+    <main aria-label="main" class="hero" id="main">
         <img class="hero-image" src="./img/hero.png" alt="Joe Mancera" srcset="">
         <div class="hero-title">
             <h1>
@@ -42,6 +37,7 @@
                     <span>I'm Joe <span class="mancera">Mancera</span></span>
                 </div>
             </h1>
+            <h2 class="role">Web developer</h2>
         </div>
         <div class="hero-items">
             <div class="hero-text">
@@ -50,350 +46,69 @@
                 </p>
             </div>
             <div class="social">
-                <a target="_blank" title="Go to Joe's GitHub" href="https://github.com/JoeMancera" alt="Go to Joe's GitHub"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
-                <a target="_blank" title="Go to Joe's instagram" href="https://www.instagram.com/joeharrym/" alt="Go to Joe's instagram"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
-                <a target="_blank" title="Go to Joe's Twitter" href="https://twitter.com/JoeHarrym" alt="Go to Joe's Twitter"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
-                <a target="_blank" title="Go to Joe's linkedIn" href="https://www.linkedin.com/in/joemancera/" alt="Go to Joe's linkedIn"><img src="./img/button_IN.svg" alt="LinkedIn" srcset=""></a>
+                <a target="_blank" title="Go to Joe's GitHub" href="https://github.com/JoeMancera" alt="Go to Joe's GitHub">
+                    <img src="./img/GitHub-logo.svg" alt="GitHub" srcset="">
+                    GitHub
+                </a>
+                <a target="_blank" title="Go to Joe's linkedIn" href="https://www.linkedin.com/in/joemancera/" alt="Go to Joe's linkedIn">
+                    <img src="./img/Linkedin-logo.svg" alt="LinkedIn" srcset="">
+                    LinkedIn
+                </a>
+                <a target="_blank" title="Go to Joe's Twitter" href="https://twitter.com/JoeHarrym" alt="Go to Joe's Twitter">
+                    <img src="./img/Twitter-logo.svg" alt="Twitter" srcset="">
+                    Twitter
+                </a>
             </div>
             <div class="hero-curriculum">
-                <a target="_blank" href="./assets/MyPortfolio.pdf" class="btn btn-primary" alt="Download curriculum">Curriculum</a>
+                <a target="_blank" href="./assets/MyPortfolio.pdf" class="btn btn-primary">
+                    <img src="./img/Document-logo.svg" alt=""/>
+                    Download curriculum
+                </a>
             </div>
         </div>
-        <div class="hero-arrow">
-            <img src="./img/arrow-down.svg" alt="arrow" srcset="">
+    </main>
+    <section id="about-me">
+        <h2 class="section-title">About me</h2>
+        <p class="section-description">
+            My name is Joe Mancera. I’m from Colombia and I have experience in different roles with backend and frontend dev. I have worked in high-performance teams, to develop the best tools to resolve problems.
+        </p>
+        <div class="console">
+            <code>
+                <div>
+                    <span class="console-pointer">~</span> sites
+                </div>
+                <div>
+                    <span class="console-pointer">></span> <span>sites</span> hyper-hypest  
+                </div>
+                <div>
+                    <span class="console-pointer">> hyper-hypest</span> <span class="console-git">git:</span> <span class="console-branch">(master)</span> 
+                </div>
+                <div>
+                    <span class="console-pointer">> hyper-hypest</span> <span class="console-git">git:</span> <span class="console-branch">(master)</span> <span class="console-command">git add.</span>
+                </div>
+                <div>
+                    <span class="console-pointer">> hyper-hypest</span> <span class="console-git">git:</span> <span class="console-branch">(master)</span> <span class="console-command">git commit - m “Hello world”</span>
+                </div>
+            </code>
         </div>
     </section>
-    <div class="wrapper">
-        <div class="about-me" id="about-me">
-            <div class="sub-title">
-                <h2>About me</h2>
-            </div>
-            <p>My name is Joe Mancera. I’m from Colombia and I’m backend developer but i like frontend too. I’m so dedicate and to my work and with 5 years of experience I hope convert in Full stack dev.</p>
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-description">
+            I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
+        </p>
+        <div class="skill-section">
+            <details>
+                <summary>
+                    <img src="./img/JavaScript-logo.svg"/>
+                    JavaScript
+                </summary>
+                <p>
+                    I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
+                </p>
+              </details>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="sub-title">
-            <h2>Skills</h2>
-        </div>
-        <div class="skills" id="skills">
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        The most used language in develop, I can used both in back and in front.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I used to created websites and web applications for the users interactions.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I have used to created wonderful websites and web applications.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>C#</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I used this to build business logic and REST APIs.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I used this to get info to BI reports in SQL server, Postgres and MySQL.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>GIT</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I have used this to versioning code and produce a good workflow.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>VSCode</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I use this app to build everything I can ... including notes.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>AdobeXD</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I use this app to create my ideas about something that I want to do.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">
-                    <h3>Figma</h3>
-                </div>
-                <div class="skill-description">
-                    <p>
-                        I use this app to create my ideas about something that I want to do.
-                    </p>
-                </div>
-                <div class="skill-xp">
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp_act.svg" alt="xp-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                    <span><img width="28px" src="./img/xp-in-act.svg" alt="xp-in-active"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="sub-title">
-            <h2>Projects</h2>
-        </div>
-        <div class="projects" id="projects">
-            <div class="project-item">
-                <div class="project-title">
-                    <h3>CODI - Ecopetrol</h3>
-                </div>
-                <div class="project-description">
-                    <p>
-                        This web app was created to ecopetrol to realize a digital courier to people outside of company
-                    </p>
-                    <a target="_blank" href="https://sedeelectronica.ecopetrol.com.co/" class="btn btn-secondary" alt="Go to web app">See app</a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-title">
-                    <h3>Shoping Car - Ci2</h3>
-                </div>
-                <div class="project-description">
-                    <p>
-                        This web app was created to admission test to Ci2 company, but I worked with its partner.
-                    </p>
-                    <a target="_blank" href="http://shoppingwebcar.apphb.com" class="btn btn-secondary" alt="Go to web app">See app</a>
-                    <a target="_blank" href="https://github.com/JoeMancera/shoppingcar" class="btn btn-primary" alt="Go to code">See code</a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-title">
-                    <h3>Demo - Techedge</h3>
-                </div>
-                <div class="project-description">
-                    <p>
-                        This web app was created to use the REST API services that have OpenText ContentServer to externs apps.
-                    </p>
-                    <a target="_blank" href="https://github.com/JoeMancera/DemoTechedge" class="btn btn-primary" alt="Go to web app">See code</a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-title">
-                    <h3>My website - Figma</h3>
-                </div>
-                <div class="project-description">
-                    <p>
-                        This project have the design here implemented, I used components, fonts and more.
-                    </p>
-                    <a target="_blank" href="./assets/MyPortfolio.fig" class="btn btn-primary" alt="Download figma project">See .Fig</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="sub-title">
-            <h2>Hobbies</h2>
-        </div>
-        <div class="hobbies">
-            <ul class="hobbies-list">
-                <li>Learn</li>
-                <li>Lisent to music</li>
-                <li>Photografy</li>
-                <li>See car races</li>
-                <li>Learning</li>
-                <li>Cars video games</li>
-            </ul>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="sub-title">
-            <h2>Inspirations</h2>
-        </div>
-        <div class="inspirations">
-            <div class="inspiration-item">
-                <a href="https://www.beek.io" target="_blank" alt="Go to beek">
-                    <img src="./img/ins-pamela.png" alt="Pamela Valdéz image" srcset="">
-                </a>
-                <div class="inspiration-description">
-                    <div class="inspiration-name">
-                        <h3>Pamela Valdéz</h3>
-                    </div>
-                    <div class="inspiration-do">
-                        <p>CEO & Cofounder of beek</p>
-                    </div>
-                </div>
-            </div>
-            <div class="inspiration-item">
-                <a href="https://www.platzi.com" target="_blank" alt="Go to platzi">
-                    <img src="./img/ins-freddy.png" alt="Freddy Vega image" srcset="">
-                </a>
-                <div class="inspiration-description">
-                    <div class="inspiration-name">
-                        <h3>Freddy Vega</h3>
-                    </div>
-                    <div class="inspiration-do">
-                        <p>CEO & Cofounder of platzi</p>
-                    </div>
-                </div>
-            </div>
-            <div class="inspiration-item">
-                <a href="https://www.tatianacalderon.com" target="_blank" alt="Go to Tatiana web site">
-                    <img src="./img/ins-tatiana.png" alt="Tatiana Calderón image" srcset="">
-                </a>
-                <div class="inspiration-description">
-                    <div class="inspiration-name">
-                        <h3>Tatiana Calderón</h3>
-                    </div>
-                    <div class="inspiration-do">
-                        <p>Super Formula & WEC LMP2 driver</p>
-                    </div>
-                </div>
-            </div>
-            <div class="inspiration-item">
-                <a href="https://thefryeshow.com" target="_blank" alt="Go to the frye show web site">
-                    <img src="./img/ins-robbie.png" alt="Robbie image" srcset="">
-                </a>
-                <div class="inspiration-description">
-                    <div class="inspiration-name">
-                        <h3>Robbie J Frye</h3>
-                    </div>
-                    <div class="inspiration-do">
-                        <p>Host of The Frye Show podcast</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="sub-title">
-            <h2>Contact me</h2>
-        </div>
-        <div class="contact" id="contact">
-            <p>You can use this form to send me a message</p>
-            <form id="form" class="form" action="https://formspree.io/f/xdoyerpb" method="POST">
-                <div>
-                    <label for="name">Name: <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Juanito Pérez" aria-label="Name" >
-                    <span aria-live="assertive" id="error-name"></span>
-                </div>
-                <div>
-                    <label for="email">Email: <span>*</span></label>
-                    <input type="text" id="email" name="email" placeholder="juanito@example.com" aria-label="Email address" >
-                    <span aria-live="assertive" id="error-email"></span>
-                </div>
-                <div>
-                    <label for="message">Message: <span>*</span></label>
-                    <textarea name="message" id="message" name="message" cols="10" rows="10" placeholder="Hello..." aria-label="Message" ></textarea>
-                    <span aria-live="assertive" id="error-message"></span>
-                </div>
-                <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">Send message</button>
-                </div>
-            </form>
-            <a href="mailto:joeharrymancera@gmil.com" id="mailto" aria-hidden="true" tabindex="-1">mail</a>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="social">
-            <a target="_blank" title="Go to Joe's GitHub" href="https://github.com/JoeMancera" alt="Go to Joe's GitHub"><img src="./img/button_GH.svg" alt="GitHub" srcset=""></a>
-            <a target="_blank" title="Go to Joe's instagram" href="https://www.instagram.com/joeharrym/" alt="Go to Joe's instagram"><img src="./img/button_IG.svg" alt="Instagram" srcset=""></a>
-            <a target="_blank" title="Go to Joe's Twitter" href="https://twitter.com/JoeHarrym" alt="Go to Joe's Twitter"><img src="./img/button_TW.svg" alt="Twitter" srcset=""></a>
-            <a target="_blank" title="Go to Joe's linkedin" href="https://www.linkedin.com/in/joemancera/" alt="Go to Joe's linkedin"><img src="./img/button_IN.svg" alt="LinkedIn" srcset=""></a>
-        </div>
-    </div>
+    </section>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-copyrigth">
