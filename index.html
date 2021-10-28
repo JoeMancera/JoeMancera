@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My name is Joe Mancera. I’m from Colombia and I’m backend developer but i like frontend too. I’m so dedicate and to my work and with 5 years of experience I hope convert in Full stack dev."/>
+    <meta name="description" content="My name is Joe Mancera. I’m from Colombia and I have experience in different roles with backend and frontend dev. I have worked in high-performance teams, to develop the best tools to resolve problems."/>
     <meta name="keywords" content="Joe Mancera, joe mancera, Joe Harry Mancera, joe harry mancera, desarrollador web"/>
-    <meta name="author" content="Joe Mancera" />
+    <meta name="author" content="Joe Mancera @joemancera" />
     <meta name="copyright" content="Joe Mancera" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Joe Mancera | Web Developer</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="head-content">
-                <img width="35px" src="./img/logo.svg" alt="Joe Mancera logo" srcset="">
+                <img width="35px" src="./img/logo.svg" alt="Joe Mancera logo" srcset=""><span class="rest-name">oe Mancera</span> 
                 <div>
                     <nav aria-label="main-navigation" class="menu">
                         <ul>
@@ -98,6 +99,15 @@
             I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
         </p>
         <div class="skill-section">
+            <details open="true">
+                <summary>
+                    <img src="./img/JavaScript-logo.svg"/>
+                    HTML, CSS & JS
+                </summary>
+                <p>
+                    I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
+                </p>
+            </details>
             <details>
                 <summary>
                     <img src="./img/JavaScript-logo.svg"/>
@@ -106,7 +116,7 @@
                 <p>
                     I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
                 </p>
-              </details>
+            </details>
         </div>
     </section>
     <footer class="footer">
@@ -125,15 +135,15 @@
         
         async function handleSubmit(event) {
             event.preventDefault();
-
+            
             const nameFile = document.getElementById('name');
             const emailFile = document.getElementById('email');
             const messageFile = document.getElementById('message');
-
+            
             document.getElementById('error-name').innerHTML = "";
             document.getElementById('error-email').innerHTML = "";
             document.getElementById('error-message').innerHTML = "";
-
+            
             if(nameFile.value === ""){
                 document.getElementById('error-name').innerHTML = "The name is required to send the message!";
             } else if(emailFile.value === ""){
