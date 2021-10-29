@@ -7,7 +7,7 @@
 #  ·················
 */
 @import "./header.css";
-@import "./wrapper.css";
+/* @import "./wrapper.css";
 @import "./hero.css";
 @import "./buttons.css";
 @import "./aboutme.css";
@@ -16,39 +16,38 @@
 @import "./hobbies.css";
 @import "./inspirations.css";
 @import "./form.css";
-@import "./footer.css";
+@import "./footer.css"; */
 /*------ Variables ------*/
 :root{
     /*------ Colors ------*/
-    --black: #060609;
-    --black-trns: #060609bd;
-    --withe: #F2F2F2;
-    --gray: #737D82;
-    --primary1: #3C7BCC;
-    --primary2: #4FC9FE;
+    --color-primary: #002230;
+    --color-secondary: #6A7B76;
+    --color-white: #F2F2F2;
+    --color-vanilla: #EBEBD3;
+    --color-link: #F96E46;
+    --color-link-hover: #C03221;
     /*------ Fonts ------*/
-    --font-primary: 'KoHo', sans-serif;
-    --font-secondary: 'Roboto Mono', monospace;;
-    --headline1: 400 32px/41.6px var(--font-primary);
-    --headline2: 200 24px/31.2px var(--font-primary);
-    --headline3: 700 18px/23.4px var(--font-primary);
-    --headline4: 400 18px/23.4px var(--font-primary);
-    --headline5: 400 16px/20.8px var(--font-primary);
-
-    --body1: 400 16px/19px var(--font-secondary);
-
-    --button: 400 18px/23px var(--font-primary);
-    --menu: 400 16px/20.8px var(--font-primary);
+    --font-family: 'KoHo', sans-serif;
+    --font-headline1: 300 48px/62.4px var(--font-family);
+    --font-headline2: 300 36px/46.8px var(--font-family);
+    --font-headline3: 500 24px/31.2px var(--font-family);
+    --font-headline4: 500 18px/23.4px var(--font-family);
+    --font-headline5: 500 16px/20.8px var(--font-family);
+    --font-body: 700 16px/28px var(--font-family);
+    --font-button: 500 18px/23.4px var(--font-family);
+    --font-link: 600 16px/20.8px var(--font-family);
+    --font-link-menu: 300 18px/23.4px var(--font-family);
     /*------ Numbers ------*/
-    --letter-spacing: 0.2em;
+    --font-letter-spacing: 0.08em;
 }
 
 body{
-    background: var(--black);
+    font: var(--font-body);
+    background: var(--color-primary);
     min-block-size: 100vh;
-    font: var(--body1);
-    color: var(--withe);
-    margin: 0;
+    color: var(--color-white);
+    margin: 0 auto;
+    max-inline-size: 1158px;
 }
 
 h1{

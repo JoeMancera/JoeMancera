@@ -9,44 +9,59 @@
     <meta name="author" content="Joe Mancera @joemancera" />
     <meta name="copyright" content="Joe Mancera" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Joe Mancera | Web Developer</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="head-content">
-                <img width="35px" src="./img/logo.svg" alt="Joe Mancera logo" srcset=""><span class="rest-name">oe Mancera</span> 
-                <div>
-                    <nav aria-label="main-navigation" class="menu">
-                        <ul>
-                            <li><a href="#main" alt="Go to hello section">Hello</a></li>
-                            <li><a href="#about-me" alt="Go to about me section">About me</a></li>
-                            <li><a href="#skills" alt="Go to skills section">Skills</a></li>
-                            <li><a href="#projects" alt="Go to projects section">Projects</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <nav class="nav">
+            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox" />
+            <label for="nav__checkbox" class="nav__toggle">
+                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    />
+                </svg>
+                <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                    <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                    />
+                </svg>
+            </label>
+            
+            <ul class="nav__menu">
+                
+                <li class="menu__logo">
+                    <img width="35px" src="./img/logo.svg" alt="Joe Mancera logo" srcset=""><span class="rest-name">oe Mancera</span> 
+                </li>
+                <li><a href="#main" alt="Go to hello section">Hello</a></li>
+                <li><a href="#about-me" alt="Go to about me section">About me</a></li>
+                <li><a href="#skills" alt="Go to skills section">Skills</a></li>
+                <li><a href="#projects" alt="Go to projects section">Projects</a></li>
+            </ul>
+        </nav>
     </header>
     <main aria-label="main" class="hero" id="main">
-        <img class="hero-image" src="./img/hero.png" alt="Joe Mancera" srcset="">
-        <div class="hero-title">
+        <img class="hero__image" src="./img/hero.png" alt="Joe Mancera" srcset="">
+        <div class="hero__title">
             <h1>
-                <span class="hero-hello">Hello!</span>
-                <div class="my-name">
-                    <span>I'm Joe <span class="mancera">Mancera</span></span>
+                <span class="hero__hello">Hello!</span>
+                <div class="hero__myname">
+                    <span>I'm Joe <span class="hero__mylastname">Mancera</span></span>
                 </div>
             </h1>
             <h2 class="role">Web developer</h2>
         </div>
-        <div class="hero-items">
-            <div class="hero-text">
+        <div class="hero__content">
+            <div class="hero__description">
                 <p>
                     Developer who loves to implement designs that inspire and attract people.
                 </p>
             </div>
-            <div class="social">
+            <div class="hero__social">
                 <a target="_blank" title="Go to Joe's GitHub" href="https://github.com/JoeMancera" alt="Go to Joe's GitHub">
                     <img src="./img/GitHub-logo.svg" alt="GitHub" srcset="">
                     GitHub
@@ -69,8 +84,8 @@
         </div>
     </main>
     <section id="about-me">
-        <h2 class="section-title">About me</h2>
-        <p class="section-description">
+        <h2 class="section__title">About me</h2>
+        <p class="section__description">
             My name is Joe Mancera. I’m from Colombia and I have experience in different roles with backend and frontend dev. I have worked in high-performance teams, to develop the best tools to resolve problems.
         </p>
         <div class="console">
@@ -94,12 +109,12 @@
         </div>
     </section>
     <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <p class="section-description">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__description">
             I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
         </p>
-        <div class="skill-section">
-            <details open="true">
+        <div class="skills">
+            <details class="skills__item--active" open="true">
                 <summary>
                     <img src="./img/JavaScript-logo.svg"/>
                     HTML, CSS & JS
@@ -108,7 +123,7 @@
                     I have some skills that can provide a lot of value to develope, near backend and frontend teams, high quality products.
                 </p>
             </details>
-            <details>
+            <details class="skills__item">
                 <summary>
                     <img src="./img/JavaScript-logo.svg"/>
                     JavaScript
@@ -120,58 +135,12 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-copyrigth">
+        <div class="footer__content">
+            <div class="footer__copyrigth">
                 <p>Made with 🤍 by Joe</p>
                 <p>Copyrigth 2021 all rights reserved</p>
             </div>
         </div>
     </footer>
-    <script>
-        const $formContact = document.querySelector('#form')
-        const $buttonMailto = document.querySelector('#mailto')
-        
-        $formContact.addEventListener('submit', handleSubmit)
-        
-        async function handleSubmit(event) {
-            event.preventDefault();
-            
-            const nameFile = document.getElementById('name');
-            const emailFile = document.getElementById('email');
-            const messageFile = document.getElementById('message');
-            
-            document.getElementById('error-name').innerHTML = "";
-            document.getElementById('error-email').innerHTML = "";
-            document.getElementById('error-message').innerHTML = "";
-            
-            if(nameFile.value === ""){
-                document.getElementById('error-name').innerHTML = "The name is required to send the message!";
-            } else if(emailFile.value === ""){
-                document.getElementById('error-email').innerHTML = "The email is required to send the message!";
-            } else if(messageFile.value === "") {
-                document.getElementById('error-message').innerHTML = "The message is required to send the message!";
-            } else {
-                document.getElementById('error-name').innerHTML = ""
-                const form = new FormData(this)
-                
-                const response = await fetch(this.action, {
-                    method: this.method,
-                    body: form,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                
-                if(response.ok){
-                    this.reset()
-                    alert("Thanks for contact me, I contact you soon.")
-                } else {
-                    $buttonMailto.setAttribute('href', `mailto:joeharrymancera@gmail.com?subject=Te contacta: ${form.get('name')}-${form.get('email')}&body=${form.get('message')}`)
-                    $buttonMailto.click()
-                    this.reset()
-                }
-            }
-        }
-    </script>
 </body>
 </html>
