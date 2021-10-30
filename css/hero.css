@@ -1,127 +1,43 @@
-.hero-hello{
-    font: var(--headline2);
-}
-.hero-image{
-    max-inline-size: 100vw;
-    width: 375px;
-}
-.hero-title{
-    max-inline-size: 110px;
-    position: absolute;
-    top: 235px;
-    left: 32px;
+.hero{
+    min-height: calc(100vh - (30px + 2rem));
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: chartreuse; */
 }
 
-.mancera{
-    display: none;
-}
-
-.hero-text{
-    padding-inline-start: 32px;
-    padding-inline-end: 32px;
-    margin-block-start: 38px;
-}
-
-.hero-text p{
-    padding: 0 0 0 18px;
-    border-left-style: solid;
-    border-left-color: var(--primary1);
-}
-
-.social{
-    margin-block-start: 38px;
-    min-inline-size: 195px;
-    padding-inline-start: 32px;
-    padding-inline-end: 32px;
-}
-
-.social a:focus{
-    outline: none;
-}
-
-.social a:focus-within{
-    outline: 2px solid var(--withe);
-}
-
-.hero-curriculum, .hero-arrow{
-    margin-block-start: 32px;
+.hero__image{
+    margin-top: 17px;
     text-align: center;
 }
 
-@media screen and (min-width: 375px){
-    .hero-image{
-        width: 100vw; /* width of container */
-        height: 340px; /* height of container */
-        object-fit: cover;
-        object-position: 50% 35%; /* try 20px 10px */
-    }
+.hero__image img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    border-radius: 50%;
 }
 
-@media screen and (min-width: 768px){
-    .hero{
-        display: flex;
-        padding-block-end: 32px;
-    }
-    
-    .hero-title{
-        min-inline-size: 255px;
-        top: 35px;
-        left: 32px;
-    }
-    
-    .hero-hello{
-        max-inline-size: 245px;
-    }
-    
-    .my-name{
-        display: ruby;
-    }
-    
-    .mancera{
-        display: block;
-    }
-    
-    .hero-text{
-        order: 1;
-        max-inline-size: 450px;
-    }
-    
-    .hero-image{
-        order: 2;
-        max-inline-size: 450px;
-        width: 400px;
-    }
-    
-    .hero-items{
-        margin-block-start: 100px;
-    }
-    
-    .hero-arrow{
-        display: none;
-    }
+.hero__title{
+    text-align: center;
 }
 
-@media screen and (min-width: 1024px){
-    .hero{
-        max-inline-size: 1158px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: space-between;
+.hero__hello{
+    display: none;
+}
 
-        padding-inline-end: 28px;
-        padding-inline-start: 28px;
-        margin: 0 auto;
-    }
-    
-    .hero-title{
-        max-height: 115px;
-        padding-inline-end: 28px;
-        padding-inline-start: 28px;
-        margin-inline-start: 28px;
-    }
-    
-    .hero-text{
-        padding-inline-start: 32px;
-        padding: 0px;
-    }
+.hero__mylastname {
+    color: var(--color-vanilla)
+}
+
+.hero__role {
+    color: var(--color-link-hover)
+}
+
+.hero__description {
+    font-size: 18px;
+    width: 300px;
 }
