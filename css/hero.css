@@ -1,3 +1,7 @@
+.hero__container{
+    background: url('../img/hero-background.svg') no-repeat top, var(--color-primary);
+    background-size: 100vw 128vh;
+}
 .hero{
     min-height: calc(100vh - (30px + 2rem));
     padding-inline-start: 20px;
@@ -5,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: chartreuse; */
 }
 
 .hero__image{
@@ -33,11 +36,42 @@
     color: var(--color-vanilla)
 }
 
+.hero__content {
+    width: 100%;
+    align-self: flex-start;
+}
+
 .hero__role {
-    color: var(--color-link-hover)
+    color: var(--color-link-hover);
+    text-align: left;
 }
 
 .hero__description {
-    font-size: 18px;
-    width: 300px;
+    font: var(--font-body2);
+    max-width: 300px;
+}
+
+.hero__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero__social a{
+    color: var(--color-white);
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero__social a:visited{
+    color: var(--color-vanilla);
+}
+
+.hero__social img{
+    margin-right: 12px;
+}
+
+.hero-curriculum{
+    margin-top: 2rem;
 }

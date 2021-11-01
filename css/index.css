@@ -8,8 +8,8 @@
 */
 @import "./header.css";
 @import "./hero.css";
-/*@import "./buttons.css";
-@import "./aboutme.css";
+@import "./buttons.css";
+/*@import "./aboutme.css";
 @import "./skills.css";
 @import "./projects.css";
 @import "./hobbies.css";
@@ -33,8 +33,10 @@
     --font-headline4: 500 18px/23.4px var(--font-family);
     --font-headline5: 500 16px/20.8px var(--font-family);
     --font-body: 700 16px/28px var(--font-family);
+    --font-body2: 400 18px/23.4px var(--font-family);
+
     --font-button: 500 18px/23.4px var(--font-family);
-    --font-link: 600 16px/20.8px var(--font-family);
+    --font-link: 400 16px/20.8px var(--font-family);
     --font-link-menu: 300 18px/23.4px var(--font-family);
     /*------ Numbers ------*/
     --font-letter-spacing: 0.08em;
@@ -45,10 +47,9 @@
 }
 body{
     font: var(--font-body);
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     min-block-size: 100vh;
     color: var(--color-white);
-    margin: 0 auto;
     max-inline-size: 1158px;
 }
 
@@ -61,8 +62,7 @@ h2{
     font: var(--font-headline2);
 }
 
-.sub-title{
-    padding: 0 0 0 18px;
-    border-left-style: solid;
-    border-left-color: #3C7BCC;
+a{
+    font: var(--font-link);
+    text-decoration: none;
 }
