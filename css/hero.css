@@ -1,7 +1,3 @@
-.hero__container{
-    background: url('../img/hero-background.svg') no-repeat top, var(--color-primary);
-    background-size: 100vw 128vh;
-}
 .hero{
     min-height: calc(100vh - (30px + 2rem));
     padding-inline-start: 20px;
@@ -74,4 +70,26 @@
 
 .hero-curriculum{
     margin-top: 2rem;
+}
+
+.wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.wave svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100vh;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: var(--color-secondary);
 }
