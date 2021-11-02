@@ -9,8 +9,9 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./buttons.css";
-/*@import "./aboutme.css";
-@import "./skills.css";
+@import "./section.css";
+@import "./console.css";
+/*@import "./skills.css";
 @import "./projects.css";
 @import "./hobbies.css";
 @import "./inspirations.css";
@@ -50,6 +51,7 @@ body{
     background: var(--color-primary);
     color: var(--color-white);
     max-inline-size: 1158px;
+    margin: 0 auto;
 }
 
 h1{

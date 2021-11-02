@@ -1,0 +1,63 @@
+.console {
+    padding: 12px;
+    color: var(--color-primary);
+    background:var(--color-vanilla);
+    border-radius: 12px;
+    width: 530px;
+    height: 248px;
+}
+
+.console__dots {
+    display: flex;
+    justify-content: space-between;
+    width: 69px;
+    height: 15px;
+    margin-bottom: 40px;
+}
+
+.dot {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.dot--red {
+    background: red;
+}
+
+.dot--orange {
+    background: orange;
+}
+
+.dot--green{
+    background: green;
+}
+
+.console code {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.console-pointer {
+    color: green;
+}
+
+.console--select {
+    color: cornflowerblue;
+}
+
+.console-git {
+    color: palevioletred;
+}
+
+.console-branch {
+    color: purple;
+}
+
+.console-command {
+    color: goldenrod;
+}

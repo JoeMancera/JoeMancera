@@ -1,0 +1,16 @@
+section{
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+.section__title {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-left: 21px;
+  border-left: 3px solid var(--color-link);
+}
+
+.section__description {
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
