@@ -14,8 +14,8 @@
 @import "./skills.css";
 @import "./projects.css";
 @import "./hobbies.css";
-/*@import "./inspirations.css";
-@import "./form.css";
+@import "./inspirations.css";
+/*@import "./form.css";
 @import "./footer.css"; */
 /*------ Variables ------*/
 :root{
@@ -65,6 +65,15 @@ h2{
 
 h3 {
     font: var(--font-headline3);
+}
+
+h4 {
+    font: var(--font-headline4);
+}
+
+h5 {
+    font: var(--font-headline5);
+    font-style: italic;
 }
 
 a{
