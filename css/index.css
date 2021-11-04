@@ -13,8 +13,8 @@
 @import "./console.css";
 @import "./skills.css";
 @import "./projects.css";
-/*@import "./hobbies.css";
-@import "./inspirations.css";
+@import "./hobbies.css";
+/*@import "./inspirations.css";
 @import "./form.css";
 @import "./footer.css"; */
 /*------ Variables ------*/
@@ -61,6 +61,10 @@ h1{
 
 h2{
     font: var(--font-headline2);
+}
+
+h3 {
+    font: var(--font-headline3);
 }
 
 a{
