@@ -93,3 +93,48 @@
 .wave .shape-fill {
     fill: var(--color-secondary);
 }
+
+@media only screen and (min-width: 560px) {
+    .hero__hello {
+        display: block;
+    }
+
+    .hero__image img {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 560px) {
+    .hero{
+        align-items: flex-start;
+    }
+
+    .hero__image{
+        align-self: center;
+    }
+
+    .hero__title {
+        text-align: left;
+        padding-left: 32px;
+        margin-bottom: 5em;
+    }
+
+    .hero__description {
+        display: inline-flex;
+        line-height: 47px;
+        font-size: 32px;
+        padding-bottom: .5em;
+        border-bottom: 2px solid var(--color-link-hover);
+        min-width: 50%;
+    }
+
+    .hero__social {
+        height: 160px;
+        display: inline-flex;
+        flex-direction: column;
+        min-width: 49%;
+        margin-top: 0;
+    }
+}

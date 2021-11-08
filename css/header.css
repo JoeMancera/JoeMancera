@@ -99,16 +99,6 @@ ul {
     display: none;
 }
 
-@media only screen and (min-width: 680px) {
-    .menu__logo {
-        align-items: center;
-    }
-    .rest-name {
-        display: initial;
-        margin-left: 4px;
-        text-transform: none;
-    }
-}
 @media only screen and (min-width: 560px) {
     .nav__toggle {
         display: none;
@@ -122,5 +112,16 @@ ul {
     
     .nav__menu li {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .menu__logo {
+        align-items: center;
+    }
+    .rest-name {
+        display: initial;
+        margin-left: 4px;
+        text-transform: none;
     }
 }
