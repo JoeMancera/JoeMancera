@@ -70,3 +70,13 @@
     background-size: cover;
     background-position: right 25% bottom 75%;
 }
+
+@media only screen and (min-width: 560px) {
+    #shoppingcar {
+        align-self: flex-end;
+    }
+
+    .description {
+        height: 142px;
+    }
+}

@@ -29,3 +29,10 @@
     height: 80px;
     color: var(--color-primary);
 }
+
+@media only screen and (min-width: 560px) {
+    .footer__contact {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

@@ -14,3 +14,12 @@ section{
   margin-top: 18px;
   margin-bottom: 25px;
 }
+
+@media only screen and (min-width: 560px) {
+  .section__description {
+    max-width: 500px;
+    margin-bottom: 50px;
+    margin-left: 28px;
+  }
+
+}

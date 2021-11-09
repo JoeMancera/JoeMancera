@@ -16,3 +16,10 @@
 .hobby__description {
   margin-bottom: 20px;
 }
+
+@media only screen and (min-width: 560px) {
+  .hobbies__container {
+    display: flex;
+    justify-content: space-around;
+  }
+}

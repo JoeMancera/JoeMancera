@@ -26,6 +26,10 @@
 }
 
 .inspiration__item--right .inspiration__content {
+    border-radius: 12px 12px 0px 12px;
+}
+
+.inspiration__item--right .inspiration__content {
     margin-left: 0;
     margin-right: 8px;
 }
@@ -37,4 +41,11 @@
 .inspiration__content blockquote {
     font: var(--font-headline3);
     margin: 18px 12px;
+}
+
+@media only screen and (min-width: 560px) {
+    .inspiration__image, .inspiration__image img {
+        width: 100px;
+        height: 100px;
+    }
 }
