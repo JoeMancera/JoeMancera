@@ -10,13 +10,14 @@
     box-shadow: 0 0 5px var(--color-vanilla);
 }
 
-.skills__item > summary{
-    list-style-type: none;
+.skills__item:focus-visible summary svg{
+    shape-outside: var(--color-vanilla);
 }
 
 .skills__item summary{
     display: flex;
     align-items: center;
+    list-style: none;
     font: var(--font-headline3);
     color: var(--color-primary);
 }
@@ -38,4 +39,69 @@ summary svg {
     height: 32px;
     margin-right: 18px;
     fill: var(--color-primary);
+}
+
+.skills__item[open] {
+    background-color: var(--color-vanilla);
+    color: var(--color-secondary);
+}
+
+@media only screen and (min-width: 560px) {
+    .skills {
+        display: grid;
+        height: 80vh;
+        grid-template-columns: [first] 30% 70% [end];
+        grid-template-rows: [first] repeat(7, 1fr);
+    }
+    .skills__item{
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+    
+    .skills__item:hover{
+        box-shadow: none;
+    }
+    
+    .skills__item summary p{
+        color: var(--color-white);
+    }
+    
+    .skills__item summary:focus-visible {
+        outline: none;
+    }
+
+    summary svg {
+        fill: var(--color-link);
+    }
+    
+    .skills__item p{
+        margin-top: 32px;
+    }
+
+    .skills__item span{
+        display: none;
+    }
+
+    .skills__item[open]{
+        background-color: transparent;
+        color: var(--color-white);
+        width: 280px;
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    }
+
+    .skills__item[open] span{
+        display: block;
+        color: var(--color-link);
+    }
+
+    .skills {
+        background-image: url('../img/background-skills.svg');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+    }
 }
