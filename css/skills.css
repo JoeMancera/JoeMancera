@@ -47,10 +47,14 @@ summary svg {
 }
 
 @media only screen and (min-width: 560px) {
+    #skills {
+        padding-inline-end: 0;
+    }
+
     .skills {
         display: grid;
         height: 80vh;
-        grid-template-columns: [first] 30% 70% [end];
+        grid-template-columns: [first] 40% 60% [end];
         grid-template-rows: [first] repeat(7, 1fr);
     }
     .skills__item{
@@ -104,4 +108,8 @@ summary svg {
         background-position-x: right;
         background-position-y: center;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    
 }
