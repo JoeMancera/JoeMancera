@@ -135,3 +135,64 @@
         margin-top: 0;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+    }
+
+    .hero__image img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .hero__title {
+        align-self: center;
+        margin: 12px 0 0 0;
+    }
+
+    .hero__hello, .hero__myname, .hero__role {
+        margin-bottom: 32px;
+    }
+
+    .hero__role {
+        margin: 0;
+    }
+
+    .hero__content{
+        margin-block-start: 48px;
+        grid-column-start: 1;
+        grid-column-end: end;   
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero__description {
+        min-width: 453px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .hero__social {
+        height: 90px;
+        flex-direction: row;
+        margin-inline-start: 85px;
+        margin-inline-end: 85px;
+    }
+
+    .hero-curriculum {
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .hero-curriculum a{
+        display: inline-flex;
+    }
+}
