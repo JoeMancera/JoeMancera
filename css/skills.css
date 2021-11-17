@@ -42,20 +42,31 @@ summary svg {
     color: var(--color-secondary);
 }
 
+.skill__dot {
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
+
+.skill__background {
+    display: none;
+}
+
 @media only screen and (min-width: 660px) {
     #skills {
         padding-inline-end: 0;
     }
 
-    .skills {
+    .skills__container {
         background-image: url('../img/background-skills.svg');
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: center;
-
         display: grid;
         height: 85vh;
-        grid-template-columns: [first] 35% 65% [end];
+        grid-template-columns: [first] 37% 63% [end];
         grid-template-rows: [first] repeat(7, 1fr);
     }
     
@@ -82,6 +93,7 @@ summary svg {
     .skills__item summary:focus {
         outline: transparent;
         list-style: transparent;
+        border-bottom: 2px solid var(--color-vanilla);
     }
 
     summary svg {
@@ -132,14 +144,69 @@ summary svg {
     
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1170px) {
+    #skills {
+        height: 740px;
+    }
 
+    .skills__container {
+        background-image: none;
+        display: inline-block;
+        position: relative;
+        width: 287px;
+        height: 287px;
+        padding: 2.8em;
+        border: 2px dashed var(--color-link);
+        border-radius: 50%;
+        margin: 6em 10em;
+    }
+
+    #html { transform:  translateX(-1.5em) translateY(-11em) ; }
+    #react { transform: translateX(10em) translateY(-11em); } 
+    #git { transform: translateX(13em) translateY(-7em); } 
+    #jest { transform: translateX(9em) translateY(-2em); }
+    #webpack { transform:  translateX(-1em) translateY(-3em) ; }
+    #accessibility { transform: translateX(-12em) translateY(-14em); }
+    #command { transform: translateX(-17em) translateY(-30em); } 
+    #figma { transform: translateX(-13em) translateY(-45em); } 
+
+    .skills__item[open]{
+        width: 280px;
+        position: relative;
+        left: 40em;
+    }
+
+    #html[open] { transform: translateY(0em) ; }
+    #react[open] { bottom: 6em; } 
+    #git[open] { bottom: 10em;  } 
+    #jest[open] { bottom: 16em;  }
+    #webpack[open] { bottom: 22em;  }
+    #accessibility[open] { bottom: 28em;  }
+    #command[open] { bottom: 34em;  } 
+    #figma[open] { bottom: 40em;  } 
+
+    .skill__dot {
+        display: inline-block;
+        transform:  translateX(8.8em) translateY(8em) ;
+    }
+
+    .skill__background {
+        background-image: url('../img/background-skills.svg');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        height: 575px;
+        width: 542px;
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 }
 
 @-webkit-keyframes fadeInRight {
     0% {
        opacity: 0;
-       -webkit-transform: translateX(40px);
+       -webkit-transform: translateX(80px);
     }
     100% {
        opacity: 1;
@@ -150,7 +217,7 @@ summary svg {
  @keyframes fadeInRight {
     0% {
        opacity: 0;
-       transform: translateX(40px);
+       transform: translateX(80px);
     }
     100% {
        opacity: 1;
