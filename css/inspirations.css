@@ -27,9 +27,6 @@
 
 .inspiration__item--right .inspiration__content {
     border-radius: 12px 12px 0px 12px;
-}
-
-.inspiration__item--right .inspiration__content {
     margin-left: 0;
     margin-right: 8px;
 }
@@ -47,5 +44,24 @@
     .inspiration__image, .inspiration__image img {
         width: 100px;
         height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .inspiration__item--right {
+        flex-direction: row;
+    }
+
+    .inspiration__item--right .inspiration__content {
+        margin-left: 8px;
+        margin-right: 0;
+        border-radius: 12px 12px 0px 12px;
+
+    }
+
+    .inspirations__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
     }
 }

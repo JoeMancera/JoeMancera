@@ -3,6 +3,11 @@ section{
   padding-inline-end: 20px;
 }
 
+.container {
+  max-inline-size: 1158px;
+  margin: 0 auto;
+}
+
 .section__title {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -22,4 +27,10 @@ section{
     margin-left: 28px;
   }
 
+}
+
+@media only screen and (min-width: 1024px) {
+  section {
+    padding-bottom: 80px;
+  }
 }

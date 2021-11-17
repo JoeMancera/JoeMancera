@@ -50,8 +50,6 @@ body{
     font: var(--font-body);
     background: var(--color-primary);
     color: var(--color-white);
-    max-inline-size: 1158px;
-    margin: 0 auto;
 }
 
 h1{
