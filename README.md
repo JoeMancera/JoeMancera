@@ -25,3 +25,7 @@ My name is Joe Mancera. I’m from Colombia and I’m web developer with 6 years
 ![Joe's GitHub stats](https://github-readme-stats.vercel.app/api?username=JoeMancera&hide=contribs,prs&theme=buefy&show_icons=true) 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoeMancera&layout=compact&theme=buefy)](https://github.com/JoeMancera/github-readme-stats)
+
+## 📚&nbsp;Web design
+
+You can see and inspire yourself with my [portfolio](https://joemancera.github.io/portfolio/) and [design](https://www.figma.com/file/P00nBospU4tO9JOycesa1I/My-Portfolio-V2?node-id=3%3A32) that I have created.
