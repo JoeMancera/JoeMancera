@@ -11,10 +11,10 @@
     color: var(--color-primary);
     background:var(--color-vanilla);
     border-radius: 12px;
-    width: 530px;
+    width: 430px;
     height: 248px;
     margin: 0 auto;
-
+    
     transition: transform 0.5s .25s cubic-bezier(0, 1, .3, 1), opacity 0.3s .25s ease-out;
     will-change: scroll-position;
 }
@@ -54,6 +54,7 @@
 }
 
 .console code {
+    font: var(--font-body);
     display: flex;
     flex-direction: column;
     padding-left: 8px;
@@ -83,5 +84,20 @@
     .console__parallax {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .console__parallax{
+        display: inline-flex;
+    }
+
+    .console {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .console__parallax:hover .console {
+        transform: rotate3d(0, 10, 0, -30deg);
     }
 }
