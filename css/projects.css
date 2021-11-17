@@ -20,6 +20,8 @@
 }
 
 .description {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     align-self: flex-end;
     height: 192px;
@@ -78,5 +80,26 @@
 
     .description {
         height: 142px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .projects__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project{
+        max-width: 320px;
+        height: 390px;
+        background: #6A7B76;
+        border-radius: 12px;
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 28px;
+    }
+
+    .description {
+        height: 200px;
     }
 }
