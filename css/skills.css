@@ -161,14 +161,14 @@ summary svg {
         margin: 6em 10em;
     }
 
-    #html { transform:  translateX(-1.5em) translateY(-11em) ; }
-    #react { transform: translateX(10em) translateY(-11em); } 
-    #git { transform: translateX(13em) translateY(-7em); } 
+    #html { transform:  translateX(-1.5em) translateY(-10em) ; }
+    #react { transform: translateX(9em) translateY(-11em); } 
+    #git { transform: translateX(12em) translateY(-7em); } 
     #jest { transform: translateX(9em) translateY(-2em); }
     #webpack { transform:  translateX(-1em) translateY(-3em) ; }
     #accessibility { transform: translateX(-12em) translateY(-14em); }
-    #command { transform: translateX(-17em) translateY(-30em); } 
-    #figma { transform: translateX(-13em) translateY(-45em); } 
+    #command { transform: translateX(-15em) translateY(-30em); } 
+    #figma { transform: translateX(-10em) translateY(-42em); } 
 
     .skills__item[open]{
         width: 280px;
@@ -179,15 +179,15 @@ summary svg {
     #html[open] { transform: translateY(0em) ; }
     #react[open] { bottom: 6em; } 
     #git[open] { bottom: 10em;  } 
-    #jest[open] { bottom: 16em;  }
-    #webpack[open] { bottom: 22em;  }
-    #accessibility[open] { bottom: 28em;  }
-    #command[open] { bottom: 34em;  } 
-    #figma[open] { bottom: 40em;  } 
+    #jest[open] { bottom: 15em;  }
+    #webpack[open] { bottom: 20em;  }
+    #accessibility[open] { bottom: 25em;  }
+    #command[open] { bottom: 30em;  } 
+    #figma[open] { bottom: 35em;  } 
 
     .skill__dot {
         display: inline-block;
-        transform:  translateX(8.8em) translateY(8em) ;
+        transform:  translateX(7.8em) translateY(7em) ;
     }
 
     .skill__background {
