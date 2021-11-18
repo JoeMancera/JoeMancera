@@ -58,6 +58,22 @@
     color: var(--color-white);
     display: flex;
     align-items: flex-end;
+    position: relative;
+}
+
+.hero__social a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -4px;
+    background: var(--color-vanilla);
+    transition: width 0.2s ease-in-out;
+}
+
+.hero__social a:hover::after{
+    width: 100%;
 }
 
 .hero__social a:visited{

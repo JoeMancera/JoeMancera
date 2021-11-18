@@ -50,6 +50,7 @@ body{
     font: var(--font-body);
     background: var(--color-primary);
     color: var(--color-white);
+    overflow-x: hidden;
 }
 
 h1{

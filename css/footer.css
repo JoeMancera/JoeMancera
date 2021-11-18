@@ -28,6 +28,22 @@
     width: 100px;
     height: 80px;
     color: var(--color-primary);
+    position: relative;
+}
+
+.footer__social a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 12px;
+    background: var(--color-primary);
+    transition: width 0.2s ease-in-out;
+}
+
+.footer__social a:hover::after{
+    width: 100%;
 }
 
 @media only screen and (min-width: 560px) {
