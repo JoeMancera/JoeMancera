@@ -28,4 +28,4 @@ My name is Joe Mancera. I’m from Colombia and I’m web developer with 6 years
 
 ## 📚&nbsp;Web design
 
-You can see and inspire yourself with my [portfolio](https://joemancera.github.io/joemancera/) and [design](https://www.figma.com/file/P00nBospU4tO9JOycesa1I/My-Portfolio-V2?node-id=3%3A32) that I have created.
+You can see and inspire yourself with my [portfolio](https://joemancera.github.io/JoeMancera/) and [design](https://www.figma.com/file/P00nBospU4tO9JOycesa1I/My-Portfolio-V2?node-id=3%3A32) that I have created.
