@@ -60,7 +60,7 @@ summary svg {
     }
 
     .skills__container {
-        background-image: url('../img/background-skills.svg');
+        background-image: url('https://raw.githubusercontent.com/JoeMancera/JoeMancera/master/img/background-skills.svg');
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: center;
