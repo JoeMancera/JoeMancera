@@ -12,10 +12,11 @@
 }
 
 .inspiration__content {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-white);
+    color: var(--color-link);
+    background-color: var(--color-vanilla);
+    border: 2px solid var(--color-link);
     max-width: 400px;
-    max-height: 203px;
+    max-height: 270px;
     border-radius: 12px 12px 12px 0px;
     margin-left: 8px;
     padding: 12px;
@@ -38,6 +39,7 @@
 .inspiration__content blockquote {
     font: var(--font-headline3);
     margin: 18px 12px;
+    color: var(--color-primary)
 }
 
 @media only screen and (min-width: 560px) {

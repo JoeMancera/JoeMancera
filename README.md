@@ -26,6 +26,9 @@ My name is Joe Mancera. I’m from Colombia and I’m web developer with 6 years
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoeMancera&layout=compact&theme=buefy)](https://github.com/JoeMancera/github-readme-stats)
 
+## 🧱&nbsp;Tools about repo:
+I use [@parcel/css](https://github.com/parcel-bundler/parcel-css) to compile my css files. This thanks to [@midudev](https://www.twitch.tv/midudev) for [this tip](https://www.linkedin.com/posts/midudev_parcel-css-es-incre%C3%ADble-con-un-s%C3%B3lo-activity-6915299252994744320-oJaA?utm_source=linkedin_share&utm_medium=member_desktop_web).
+
 ## 📚&nbsp;Web design
 
 You can see and inspire yourself with my [portfolio](https://joemancera.github.io/JoeMancera/) and [design](https://www.figma.com/file/P00nBospU4tO9JOycesa1I/My-Portfolio-V2?node-id=3%3A32) that I have created.
