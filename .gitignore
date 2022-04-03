@@ -7,6 +7,8 @@
 # Icon must end with two \r
 Icon
 
+#Node modules
+node_modules
 
 # Thumbnails
 ._*
