@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/JoeMancera/JoeMancera#readme",
   "devDependencies": {
-    "@parcel/css": "^1.7.4",
-    "@parcel/css-cli": "^1.7.4"
+    "@parcel/css": "1.7.4",
+    "@parcel/css-cli": "1.7.4"
   }
 }
