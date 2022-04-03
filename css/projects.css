@@ -54,21 +54,21 @@
 }
 
 #codi {
-    background: url('../img/background-codi.png'), #6A7B76;
+    background: url('/img/background-codi.png'), #6A7B76;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right 25% bottom 75%;
 }
 
 #shoppingcar {
-    background: url('../img/background-shopping.png'), #6A7B76;
+    background: url('/img/background-shopping.png'), #6A7B76;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right 25% bottom 75%;
 }
 
 #catstagram {
-    background: url('../img/background-catstagram.png'), #6A7B76;
+    background: url('/img/background-catstagram.png'), #6A7B76;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right 25% bottom 75%;
