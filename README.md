@@ -1,5 +1,5 @@
 # Joe Mancera
-<img src="https://raw.githubusercontent.com/JoeMancera/JoeMancera/dev_ver3/assets/GitHub%20header.png" alt="banner that says Hello world - Web develope">
+<img src="https://raw.githubusercontent.com/JoeMancera/JoeMancera/master/assets/GitHub%20header.png" alt="banner that says Hello world - Web develope">
 
 ## 👋&nbsp;Hi there
 
