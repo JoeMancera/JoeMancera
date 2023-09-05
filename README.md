@@ -29,14 +29,14 @@ My name is Joe Mancera. I’m from Colombia and I’m web developer with +7 year
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 ## 🏋️&nbsp;My GitHub Activity 
-![Joe's GitHub stats](https://github-readme-stats.vercel.app/api?username=JoeMancera\&rank_icon=github&hide=contribs&theme=radical&show_icons=true) 
+![Joe's GitHub stats](https://github-readme-stats.vercel.app/api?username=JoeMancera\&rank_icon=github&hide=contribs&theme=tokyonight&show_icons=true) 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoeMancera&layout=compact&theme=radical)](https://github.com/JoeMancera/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoeMancera&layout=compact&theme=tokyonight)](https://github.com/JoeMancera/github-readme-stats)
 
 ## 🎨&nbsp;Latest projects:
-![Numerica Combo Game](https://github-readme-stats.vercel.app/api/pin/?username=JoeMancera&repo=numerica-combo-game&theme=radical)
+![Numerica Combo Game](https://github-readme-stats.vercel.app/api/pin/?username=JoeMancera&repo=numerica-combo-game&theme=tokyonight)
 
-![Hackernews app](https://github-readme-stats.vercel.app/api/pin/?username=JoeMancera&repo=hackernews-app&theme=radical)
+![Hackernews app](https://github-readme-stats.vercel.app/api/pin/?username=JoeMancera&repo=hackernews-app&theme=tokyonight)
 
 ## 🧱&nbsp;Tools about repo:
 I use [@parcel/css](https://github.com/parcel-bundler/parcel-css) to compile my css files. This thanks to [@midudev](https://www.twitch.tv/midudev) for [this tip](https://www.linkedin.com/posts/midudev_parcel-css-es-incre%C3%ADble-con-un-s%C3%B3lo-activity-6915299252994744320-oJaA?utm_source=linkedin_share&utm_medium=member_desktop_web).
