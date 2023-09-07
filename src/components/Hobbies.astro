@@ -1,0 +1,67 @@
+<style>
+  .hobbies__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .hobby__description {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 560px) {
+    .hobbies__container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+</style>
+<section id="hobbies" class="container">
+  <h2 class="section__title">Hobbies</h2>
+  <p class="section__description">
+    I want to share with you my hobbies and some of my favorite things.
+  </p>
+  <div class="hobbies__container">
+    <div class="hobby">
+      <div class="hobby__description">
+        <h3>Learn</h3>
+      </div>
+      <div class="hobby__image">
+        <img src="./img/hobby-learn.png" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="hobby">
+      <div class="hobby__description">
+        <h3>Photography</h3>
+      </div>
+      <div class="hobby__image">
+        <img src="./img/hobby-photografy.png" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="hobby">
+      <div class="hobby__description">
+        <h3>Listen to music</h3>
+      </div>
+      <div class="hobby__image">
+        <img src="./img/hobby-music.png" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="hobby">
+      <div class="hobby__description">
+        <h3>See car races</h3>
+      </div>
+      <div class="hobby__image">
+        <img src="./img/hobby-f1.png" alt="" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>

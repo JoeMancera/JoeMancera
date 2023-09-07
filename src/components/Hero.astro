@@ -1,0 +1,263 @@
+<main aria-label="main" class="hero container" id="main">
+  <figure class="hero__image">
+    <img src="./img/hero.png" alt="Joe Mancera" loading="lazy" />
+  </figure>
+
+  <div class="hero__title">
+    <h1>
+      <span class="hero__hello">Hello!</span>
+      <div class="hero__myname">
+        <span>I'm <span class="hero__mylastname">Joe Mancera</span></span>
+      </div>
+    </h1>
+    <h2 class="hero__role">Web developer</h2>
+  </div>
+  <div class="hero__content">
+    <div class="hero__description">
+      <p>
+        Developer who loves to implement designs that inspire and attract
+        people.
+      </p>
+    </div>
+    <div class="hero__social">
+      <a
+        target="_blank"
+        title="Go to Joe's GitHub"
+        href="https://github.com/JoeMancera"
+        title="Go to Joe's GitHub"
+        rel="noopener noreferrer"
+      >
+        <img src="./img/GitHub-logo.svg" alt="GitHub" loading="lazy" />
+         GitHub
+      </a>
+      <a
+        target="_blank"
+        title="Go to Joe's linkedIn"
+        href="https://www.linkedin.com/in/joemancera/"
+        title="Go to Joe's linkedIn"
+        rel="noopener noreferrer"
+      >
+        <img src="./img/Linkedin-logo.svg" alt="LinkedIn" loading="lazy" />
+         LinkedIn
+      </a>
+      <a
+        target="_blank"
+        title="Go to Joe's Twitter"
+        href="https://twitter.com/JoeHarrym"
+        title="Go to Joe's Twitter"
+        rel="noopener noreferrer"
+      >
+        <img src="./img/Twitter-logo.svg" alt="Twitter" loading="lazy" />
+         Twitter
+      </a>
+    </div>
+    <div class="hero-curriculum">
+      <a
+        target="_blank"
+        href="./assets/Joe Harry Mancera - Web Developer -EN-ES.pdf"
+        class="btn btn-primary"
+        rel="noopener noreferrer"
+      >
+        <img src="./img/Document-logo.svg" alt="" />
+         Download curriculum
+      </a>
+    </div>
+  </div>
+</main>
+<style>
+  .hero {
+    min-height: calc(100vh - (30px + 2rem));
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero__image {
+    margin-top: 17px;
+    text-align: center;
+  }
+
+  .hero__image img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    border-radius: 50%;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__hello {
+    display: none;
+  }
+
+  .hero__mylastname {
+    color: var(--color-vanilla);
+  }
+
+  .hero__content {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .hero__role {
+    color: var(--color-link-hover);
+    text-align: left;
+  }
+
+  .hero__description {
+    font: var(--font-body2);
+    max-width: 300px;
+  }
+
+  .hero__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .hero__social a {
+    color: var(--color-white);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .hero__social a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -4px;
+    background: var(--color-vanilla);
+    transition: width 0.2s ease-in-out;
+  }
+
+  .hero__social a:hover::after {
+    width: 100%;
+  }
+
+  .hero__social a:visited {
+    color: var(--color-vanilla);
+  }
+
+  .hero__social img {
+    margin-right: 12px;
+  }
+
+  .hero-curriculum {
+    margin-top: 2rem;
+  }
+
+  @media only screen and (min-width: 560px) {
+    .hero__hello {
+      display: block;
+    }
+
+    .hero__image img {
+      height: 300px;
+      width: 300px;
+    }
+
+    .hero {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .hero__image {
+      align-self: center;
+    }
+
+    .hero__title {
+      text-align: left;
+      padding-left: 32px;
+      margin-bottom: 5em;
+    }
+
+    .hero__description {
+      display: inline-flex;
+      line-height: 47px;
+      font-size: 32px;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid var(--color-link-hover);
+      min-width: 50%;
+    }
+
+    .hero__social {
+      height: 160px;
+      display: inline-flex;
+      flex-direction: column;
+      min-width: 49%;
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-auto-flow: row;
+    }
+
+    .hero__image img {
+      height: 200px;
+      width: 200px;
+    }
+
+    .hero__title {
+      align-self: center;
+      margin: 12px 0 0 0;
+    }
+
+    .hero__myname,
+    .hero__role {
+      margin-bottom: 32px;
+    }
+
+    .hero__role {
+      margin: 0;
+    }
+
+    .hero__content {
+      margin-block-start: 48px;
+      grid-column-start: 1;
+      grid-column-end: end;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .hero__description {
+      min-width: 453px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .hero__social {
+      height: 90px;
+      flex-direction: row;
+      margin-inline-start: 85px;
+      margin-inline-end: 85px;
+    }
+
+    .hero-curriculum {
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+    }
+
+    .hero-curriculum a {
+      display: inline-flex;
+    }
+  }
+</style>

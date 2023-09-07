@@ -1,0 +1,24 @@
+---
+import Weave from '@/components/Weave.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Hero from '@/components/Hero.astro'
+import AboutMe from '@/components/AboutMe.astro'
+import Projects from '@/components/Projects/index.astro'
+import Skills from '@/components/Skills.astro'
+import Hobbies from '@/components/Hobbies.astro'
+import Inspirations from '@/components/Inspirations.astro'
+
+const title = 'Joe Mancera | Web Developer 🚀'
+const description =
+  'My name is Joe Mancera. I’m from Colombia and I have experience in different roles with backend and frontend dev. I have worked in high-performance teams, to develop the best tools to resolve problems.'
+---
+
+<BaseLayout title={title} description={description}>
+  <Weave />
+  <Hero />
+  <AboutMe />
+  <Projects />
+  <Skills />
+  <Hobbies />
+  <Inspirations />
+</BaseLayout>

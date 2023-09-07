@@ -1,25 +1,15 @@
 {
   "name": "joemancera",
-  "version": "1.0.0",
-  "description": "My name is Joe Mancera. I’m from Colombia and I’m web developer with 6 years of experience in different roles like backend and frontend.",
-  "main": "index.js",
+  "type": "module",
+  "version": "3.0.0",
   "scripts": {
-    "build": "parcel-css --minify --bundle --targets '> 1%' css/index.css -o bundle.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JoeMancera/JoeMancera.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JoeMancera/JoeMancera/issues"
-  },
-  "homepage": "https://github.com/JoeMancera/JoeMancera#readme",
-  "devDependencies": {
-    "@parcel/css": "1.7.4",
-    "@parcel/css-cli": "1.7.4"
+  "dependencies": {
+    "astro": "^3.0.9"
   }
 }

@@ -1,0 +1,141 @@
+<style>
+  .footer {
+    background-color: var(--color-vanilla);
+    color: var(--color-primary);
+  }
+
+  .footer__content {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .footer__contact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .footer__social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__social a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    color: var(--color-primary);
+    position: relative;
+  }
+
+  .footer__social a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 12px;
+    background: var(--color-primary);
+    transition: width 0.2s ease-in-out;
+  }
+
+  .footer__social a:hover::after {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 560px) {
+    .footer__contact {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+</style>
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__contact">
+      <a
+        target="_blank"
+        href="./assets/Joe Harry Mancera - Web Developer -EN-ES.pdf"
+        class="btn btn-primary"
+        rel="noopener noreferrer"
+      >
+        <img src="./img/Document-logo.svg" alt="" />
+         Download curriculum
+      </a>
+      <div class="footer__social">
+        <a
+          target="_blank"
+          title="Go to Joe's GitHub"
+          href="https://github.com/JoeMancera"
+          title="Go to Joe's GitHub"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/GitHub-logo.svg" alt="GitHub" loading="lazy" />
+           GitHub
+        </a>
+        <a
+          target="_blank"
+          title="Go to Joe's linkedIn"
+          href="https://www.linkedin.com/in/joemancera/"
+          title="Go to Joe's linkedIn"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/Linkedin-logo.svg" alt="LinkedIn" loading="lazy" />
+           LinkedIn
+        </a>
+        <a
+          target="_blank"
+          title="Go to Joe's Twitter"
+          href="https://twitter.com/JoeHarrym"
+          title="Go to Joe's Twitter"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/Twitter-logo.svg" alt="Twitter" loading="lazy" />
+           Twitter
+        </a>
+
+        <a
+          target="_blank"
+          title="Go to Joe's CodePen"
+          href="https://codepen.io/JoeMancera/pens/popular"
+          title="Go to Joe's CodePen"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/CodePen.svg" alt="CodePen" loading="lazy" />
+           CodePen
+        </a>
+        <a
+          target="_blank"
+          title="Go to Joe's 500px"
+          href="https://500px.com/p/joeharrym?view=photos"
+          title="Go to Joe's 500px"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/500px.svg" alt="500px" loading="lazy" />
+           500px
+        </a>
+        <a
+          target="_blank"
+          title="Go to Joe's CodeSandbox"
+          href="https://codesandbox.io/u/JoeMancera"
+          title="Go to Joe's CodeSandbox"
+          rel="noopener noreferrer"
+        >
+          <img src="./img/codesambox.svg" alt="CodeSandbox" loading="lazy" />
+           CodeSandbox
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyrigth">
+      <p>Made with 🧡 by Joe</p>
+      <p>
+        Copyright? <img src="./img/nuestro.png" alt="our" loading="lazy" />
+         Rights to copy and modify
+      </p>
+    </div>
+  </div>
+</footer>

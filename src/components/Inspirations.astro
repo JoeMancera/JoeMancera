@@ -1,0 +1,169 @@
+<style>
+  .inspiration__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .inspiration__image,
+  .inspiration__image img {
+    border-color: 2px solid var(--color-vanilla);
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+  }
+
+  .inspiration__content {
+    color: var(--color-link);
+    background-color: var(--color-vanilla);
+    border: 2px solid var(--color-link);
+    max-width: 400px;
+    max-height: 270px;
+    border-radius: 12px 12px 12px 0px;
+    margin-left: 8px;
+    padding: 12px;
+  }
+
+  .inspiration__item--right {
+    flex-direction: row-reverse;
+  }
+
+  .inspiration__item--right .inspiration__content {
+    border-radius: 12px 12px 0px 12px;
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
+  .inspiration__content h5 {
+    color: var(--color-primary);
+  }
+
+  .inspiration__content blockquote {
+    font: var(--font-headline3);
+    margin: 18px 12px;
+    color: var(--color-primary);
+  }
+
+  @media only screen and (min-width: 560px) {
+    .inspiration__image,
+    .inspiration__image img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .inspiration__item--right {
+      flex-direction: row;
+    }
+
+    .inspiration__item--right .inspiration__content {
+      margin-left: 8px;
+      margin-right: 0;
+      border-radius: 12px 12px 12px 0px;
+    }
+
+    .inspirations__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+  }
+</style>
+<section id="inspirations" class="container">
+  <h2 class="section__title">Inspirations</h2>
+  <p class="section__description">
+    Everything I think or have in my mind, is influenced by incredible people,
+    Their dreams come true, they give me the power to never give up and keep
+    pushing.
+  </p>
+  <div class="inspirations__container">
+    <div class="inspiration__item">
+      <figure class="inspiration__image">
+        <img src="./img/mududev.jpg" alt="Miguel Ángel Durán" loading="lazy" />
+      </figure>
+      <div class="inspiration__content">
+        <p>Miguel Ángel Durán</p>
+        <h5>The best streamer dev ever</h5>
+        <blockquote cite="https://midu.dev/">
+          “Don't compare yourself... You have just started, and you have many
+          things ahead of you to learn and assimilate”
+        </blockquote>
+      </div>
+    </div>
+    <div class="inspiration__item inspiration__item--right">
+      <figure class="inspiration__image">
+        <img src="./img/pamela-valdes.png" alt="Pamela Valdés" loading="lazy" />
+      </figure>
+      <div class="inspiration__content">
+        <p>Pamela Valdés</p>
+        <h5>CEO & Cofounder of Beek</h5>
+        <blockquote cite="https://beek.io">
+          “If you are not willing to lose everything, you are not willing to win
+          it”
+        </blockquote>
+      </div>
+    </div>
+    <div class="inspiration__item">
+      <figure class="inspiration__image">
+        <img src="./img/freddy-vega.png" alt="Freddy Vega" loading="lazy" />
+      </figure>
+      <div class="inspiration__content">
+        <p>Freddy Vega</p>
+        <h5>CEO & Cofounder of platzi</h5>
+        <blockquote cite="https://www.platzi.com">
+          “People want the fast trick, the two seconds hack that should you
+          repeat”
+        </blockquote>
+      </div>
+    </div>
+    <div class="inspiration__item inspiration__item--right">
+      <figure class="inspiration__image">
+        <img
+          src="./img/tatiana-calderon.png"
+          alt="Tatiana Calderón"
+          loading="lazy"
+        />
+      </figure>
+      <div class="inspiration__content">
+        <p>Tatiana Calderón</p>
+        <h5>Super Formula & WEC LMP2 driver</h5>
+        <blockquote
+          cite="https://www.femalesinmotorsport.com/post/tatiana-calder%C3%B3n-we-re-there-to-compete-against-the-best"
+        >
+          “The only person who can determine what your limits are is you”
+        </blockquote>
+      </div>
+    </div>
+    <div class="inspiration__item">
+      <figure class="inspiration__image">
+        <img src="./img/robbie.png" alt="Robbie J. Frie" loading="lazy" />
+      </figure>
+      <div class="inspiration__content">
+        <p>Robbie J. Frye</p>
+        <h5>Host of The Frye Show podcast</h5>
+        <blockquote cite="https://thefryeshow.com">
+          “You can earn more money, not more time”
+        </blockquote>
+      </div>
+    </div>
+    <div class="inspiration__item inspiration__item--right">
+      <figure class="inspiration__image">
+        <img
+          src="./img/lewis-hamilton-turkey.png"
+          alt="Lewis Hamilton on Turkey"
+          loading="lazy"
+        />
+      </figure>
+      <div class="inspiration__content">
+        <p>Lewis Hamilton</p>
+        <h5>F1 World champion</h5>
+        <blockquote
+          cite="https://twitter.com/LewisHamilton/status/1459981881383038980"
+        >
+          “You can do anything you put your mind to!”
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>

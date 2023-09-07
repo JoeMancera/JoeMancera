@@ -1,0 +1,34 @@
+---
+import Console from './Console.astro'
+---
+
+<style>
+  @media only screen and (min-width: 1024px) {
+    #about-me {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      align-content: center;
+    }
+
+    #about-me .section__title {
+      grid-column: 1/3;
+    }
+
+    #about-me p {
+      display: inline-block;
+      align-self: center;
+    }
+  }
+</style>
+<section id="about-me" class="container">
+  <h2 class="section__title">About me</h2>
+  <p class="section__description">
+    My name is Joe Mancera. I’m from Colombia and I have experience in different
+    roles with backend and frontend dev. I'm a passionate learner and I'm always
+    looking for new challenges and opportunities to grow my skills. I have
+    worked on high-performance teams, developing the best tools and technologies
+    to solve problems.
+  </p>
+  <Console />
+</section>

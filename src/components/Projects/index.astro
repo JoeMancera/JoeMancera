@@ -1,0 +1,194 @@
+<style>
+  .projects__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project {
+    max-width: 550px;
+    height: 390px;
+    background: #6a7b76;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .project:hover {
+    box-shadow: 0 0 5px var(--color-vanilla);
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-self: flex-end;
+    height: 192px;
+    background: linear-gradient(
+      180deg,
+      rgba(138, 137, 137, 0) 0%,
+      var(--color-black) 100%
+    );
+  }
+
+  .description h3 {
+    margin: 0;
+    color: var(--color-link);
+    text-shadow: 0px 0px 2px var(--color-black);
+  }
+
+  .description p {
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+    text-shadow: 0px 0px 6px rgba(0, 34, 48, 0.4);
+  }
+
+  .button__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .button__group a {
+    margin-right: 10px;
+  }
+
+  #codi {
+    background: url('https://raw.githubusercontent.com/JoeMancera/JoeMancera/master/img/background-codi.png'),
+      #6a7b76;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 25% bottom 75%;
+  }
+
+  #shoppingcar {
+    background: url('https://raw.githubusercontent.com/JoeMancera/JoeMancera/master/img/background-shopping.png'),
+      #6a7b76;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 25% bottom 75%;
+  }
+
+  #catstagram {
+    background: url('https://raw.githubusercontent.com/JoeMancera/JoeMancera/master/img/background-catstagram.png'),
+      #6a7b76;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 25% bottom 75%;
+  }
+
+  @media only screen and (min-width: 560px) {
+    #shoppingcar {
+      align-self: flex-end;
+    }
+
+    .description {
+      height: 142px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .projects__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .project {
+      max-width: 320px;
+      height: 390px;
+      background: #6a7b76;
+      border-radius: 12px;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .description {
+      height: 200px;
+    }
+  }
+</style>
+<section id="projects" class="container">
+  <h2 class="section__title">Projects</h2>
+  <p class="section__description">
+    I show you to me the best and important projects that I have. I think that
+    this projects help me to know how do APIs, how implement that and do the
+    interaction with the users.
+  </p>
+  <div class="projects__container">
+    <div class="project" id="codi">
+      <div class="description">
+        <h3>CODI - Ecopetrol</h3>
+        <p>
+          This web app was created to ecopetrol to realize a digital courier to
+          people outside of company
+        </p>
+        <div class="button__group">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="./assets/Arch CODI.png"
+            class="btn btn-primary">See arch.</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://sedeelectronica.ecopetrol.com.co/"
+            class="btn btn-secondary">See app</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="project" id="shoppingcar">
+      <div class="description">
+        <h3>Shopping car - Ci2</h3>
+        <p>
+          This web app was created to admission test to Ci2 company, but I
+          worked with its partner.
+        </p>
+        <div class="button__group">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/JoeMancera/shoppingcar"
+            class="btn btn-primary">See code</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://shoppingwebcar.apphb.com"
+            class="btn btn-secondary">See app</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="project" id="catstagram">
+      <div class="description">
+        <h3>Catstagram</h3>
+        <p>
+          I learned JS and React.js with this project. I used the API cat to
+          search images, breed and categories.
+        </p>
+        <div class="button__group">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/JoeMancera/catstagram"
+            class="btn btn-primary">See code</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://nostalgic-elion-5c361e.netlify.app/"
+            class="btn btn-secondary">See app</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,172 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+const { title, description } = Astro.props
+---
+
+<style is:global>
+  /*------ Variables ------*/
+  :root {
+    /*------ Colors ------*/
+    --color-primary: #002230;
+    --color-secondary: #6a7b76;
+    --color-white: #f2f2f2;
+    --color-black: #111111;
+    --color-vanilla: #ebebd3;
+    --color-link: #f96e46;
+    --color-link-hover: #c03221;
+    /*------ Fonts ------*/
+    --font-family: 'KoHo', sans-serif;
+    --font-headline1: 300 48px/62.4px var(--font-family);
+    --font-headline2: 300 36px/46.8px var(--font-family);
+    --font-headline3: 500 24px/31.2px var(--font-family);
+    --font-headline4: 500 18px/23.4px var(--font-family);
+    --font-headline5: 500 16px/20.8px var(--font-family);
+    --font-body: 500 18px/28px var(--font-family);
+    --font-body2: 400 18px/23.4px var(--font-family);
+
+    --font-button: 500 18px/23.4px var(--font-family);
+    --font-link: 400 16px/20.8px var(--font-family);
+    --font-link-menu: 300 18px/23.4px var(--font-family);
+    /*------ Numbers ------*/
+    --font-letter-spacing: 0.08em;
+  }
+
+  * {
+    margin: 0;
+  }
+  body {
+    font: var(--font-body);
+    background: var(--color-primary);
+    color: var(--color-white);
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font: var(--font-headline1);
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font: var(--font-headline2);
+  }
+
+  h3 {
+    font: var(--font-headline3);
+  }
+
+  h4 {
+    font: var(--font-headline4);
+  }
+
+  h5 {
+    font: var(--font-headline5);
+    font-style: italic;
+  }
+
+  a {
+    font: var(--font-link);
+    text-decoration: none;
+  }
+
+  section {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+
+  .container {
+    max-inline-size: 1158px;
+    margin: 0 auto;
+  }
+
+  .section__title {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-left: 21px;
+    border-left: 3px solid var(--color-link);
+  }
+
+  .section__description {
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
+
+  @media only screen and (min-width: 560px) {
+    .section__description {
+      max-width: 500px;
+      margin-bottom: 50px;
+      margin-left: 28px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    section {
+      padding-bottom: 80px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    font: var(--font-button);
+    border-radius: 12px;
+    padding-block-start: 8px;
+    padding-block-end: 8px;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+    margin-block-start: 12px;
+    margin-block-end: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--color-vanilla);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+  }
+
+  .btn img {
+    margin-right: 10px;
+  }
+
+  .btn-primary {
+    background-color: var(--color-white);
+    border-color: var(--color-link);
+    color: var(--color-primary);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-link);
+    color: var(--color-white);
+  }
+
+  .btn-secondary {
+    border-color: var(--color-vanilla);
+    color: var(--color-secondary);
+  }
+
+  .btn-secondary:hover {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+</style>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
