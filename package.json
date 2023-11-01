@@ -2,6 +2,12 @@
   "name": "joemancera",
   "type": "module",
   "version": "3.0.0",
+  "description": "My name is Joe Mancera. I’m from Colombia and I’m web developer with 6 years of experience in different roles like backend and frontend.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeMancera/JoeMancera.git"
+  },
+  "author": "JoeMancera",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
