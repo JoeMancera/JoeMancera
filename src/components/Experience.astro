@@ -9,10 +9,10 @@ import { experience } from '../../utils/data/experience'
     been involved in many projects. I have working with many technologies and
     roles.
   </p>
-  <div class="experience__container">
+  <ol class="experience__container">
     {
       experience.reverse().map((item) => (
-        <article class="experience__item">
+        <li class="experience__item">
           <h3 class="experience__item--title">{item.title}</h3>
           <span class="experience__item--info">
             {item.entity}
@@ -25,13 +25,14 @@ import { experience } from '../../utils/data/experience'
               <p>{desc}</p>
             ))}
           </div>
-        </article>
+        </li>
       ))
     }
-  </div>
+  </ol>
 </section>
 <style>
   .experience__container {
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -47,6 +48,7 @@ import { experience } from '../../utils/data/experience'
   }
 
   .experience__item::after {
+    opacity: 0.5;
     content: '';
     display: block;
     width: 28px;
