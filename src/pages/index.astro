@@ -1,5 +1,4 @@
 ---
-import Weave from '@/components/Weave.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '@/components/Hero.astro'
 import AboutMe from '@/components/AboutMe.astro'
@@ -15,11 +14,10 @@ const description =
 ---
 
 <BaseLayout title={title} description={description}>
-  <Weave />
   <Hero />
-  <AboutMe />
   <Experience />
   <Projects />
+  <AboutMe />
   <Skills />
   <Hobbies />
   <Inspirations />
