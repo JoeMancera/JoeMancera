@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '@/components/Hero.astro'
 import AboutMe from '@/components/AboutMe.astro'
@@ -14,11 +15,13 @@ const description =
 ---
 
 <BaseLayout title={title} description={description}>
-  <Hero />
-  <Experience />
-  <Projects />
-  <AboutMe />
-  <Skills />
-  <Hobbies />
-  <Inspirations />
+  <div class="pt-20">
+    <Hero />
+    <Experience />
+    <Projects />
+    <AboutMe />
+    <Skills />
+    <Hobbies />
+    <Inspirations />
+  </div>
 </BaseLayout>

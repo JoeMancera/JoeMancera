@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ===== VARIABLES GLOBALES ===== */
+:root {
+  --neon-green: #ccff00;
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-orange: #ff6b35;
+  --neon-purple: #9d4edd;
+  --dark-bg: #050505;
+  --panel-bg: #0a0a0a;
+  --glass-bg: rgba(10, 10, 10, 0.7);
+}
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #e5e5e5;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(204, 255, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* ===== SCROLLBAR NEON ===== */
+/* Scrollbar Neon */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #00000000; }
+  ::-webkit-scrollbar-thumb { 
+    background: #ccff00; 
+    border-radius: 4px;
+  }
