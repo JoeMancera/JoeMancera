@@ -1,0 +1,40 @@
+:root {
+  /* Backgrounds */
+  --bg-base: #0B0B0D;
+  --bg-surface: #1A1A1D;
+
+  /* Text */
+  --text-primary: #F2F0EA;
+  --text-secondary: #9A9A95;
+
+  /* Accents — use one dominant per section, others as small details */
+  --accent-red: #D7261E;
+  --accent-blue: #1B5FAE;
+  --accent-yellow: #F2B705;
+
+  /* Structure */
+  --line: #2A2A2D;
+
+  /* Spacing scale (base 8px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+
+  /* Radius — keep near-zero, this is intentional (Bauhaus, not SaaS-soft) */
+  --radius: 4px;
+
+  /* Type */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', 'IBM Plex Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+
+  /* Motion */
+  --motion-fast: 150ms ease-out;
+  --motion-base: 200ms ease-out;
+  --motion-assemble: 350ms ease-out; /* reserved for the AI command bar only */
+}

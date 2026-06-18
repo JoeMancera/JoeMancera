@@ -5,40 +5,35 @@ const { title, description } = Astro.props
 ---
 
 <style is:global>
-  /*------ Variables ------*/
   :root {
-    /*------ Colors ------*/
-    --color-primary: #83f56e;
-    --color-secondary: #f56ded;
-    --color-tertiary: #7171f8;
-    --color-white: #f2f2f2;
-    --color-black: #2f2f2f;
+    --color-white: var(--text-primary);
+    --color-black: var(--bg-base);
     --color-grey: #494949;
-    --color-light: #d8d8d8;
-    /*------ Fonts ------*/
-    --font-family-body: 'Lexend', sans-serif;
-    --font-family-headings: 'Permanent Marker', cursive;
-    --font-headline1: 400 48px/62.4px var(--font-family-headings);
-    --font-headline2: 400 36px/46.8px var(--font-family-headings);
-    --font-headline3: 500 24px/31.2px var(--font-family-headings);
-    --font-headline1-back: 400 48px/62.4px var(--font-family-body);
-    --font-headline2-back: 400 36px/46.8px var(--font-family-body);
-    --font-headline3-back: 500 24px/31.2px var(--font-family-body);
-    --font-headline4-back: 500 18px/23.4px var(--font-family-body);
-    --font-body: 500 18px/28px var(--font-family-body);
+    --color-light: var(--text-secondary);
+    --color-primary: var(--accent-red);
+    --color-secondary: var(--accent-blue);
+    --color-link: var(--accent-blue);
+    --color-vanilla: var(--text-primary);
+
+    --font-family-body: 'Inter', sans-serif;
+    --font-family-headings: 'Space Grotesk', sans-serif;
+    --font-family: 'Inter', sans-serif;
+    --font-headline1: 700 48px/62.4px var(--font-family-headings);
+    --font-headline2: 700 36px/46.8px var(--font-family-headings);
+    --font-headline3: 600 24px/31.2px var(--font-family-headings);
+    --font-headline4: 500 18px/23.4px var(--font-family-body);
+    --font-body: 400 18px/28px var(--font-family-body);
     --font-body-small: 400 18px/23.4px var(--font-family-body);
     --font-labels: 400 18px/23.4px var(--font-family);
-
-    --font-button: 500 18px/23.4px var(--font-family);
-    --font-link: 400 16px/20.8px var(--font-family);
+    --font-button: 500 18px/23.4px var(--font-family-body);
+    --font-link: 400 16px/20.8px var(--font-family-body);
     --font-link-menu: 300 18px/23.4px var(--font-family);
-    /*------ Numbers ------*/
-    --font-letter-spacing: 0.08em;
   }
 
   * {
     margin: 0;
   }
+
   body {
     font: var(--font-body);
     background: var(--color-black);
@@ -48,7 +43,7 @@ const { title, description } = Astro.props
 
   h1 {
     font: var(--font-headline1);
-    text-transform: uppercase;
+    text-transform: none;
   }
 
   h2 {
@@ -61,11 +56,6 @@ const { title, description } = Astro.props
 
   h4 {
     font: var(--font-headline4);
-  }
-
-  h5 {
-    font: var(--font-headline5);
-    font-style: italic;
   }
 
   a {
@@ -110,45 +100,35 @@ const { title, description } = Astro.props
   }
 
   .btn {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     font: var(--font-button);
     border-radius: 12px;
-    padding-block-start: 8px;
-    padding-block-end: 8px;
-    padding-inline-start: 32px;
-    padding-inline-end: 32px;
-    margin-block-start: 12px;
-    margin-block-end: 12px;
+    padding: 0.5rem 2rem;
+    margin: 0.75rem 0;
     text-decoration: none;
     cursor: pointer;
-    background-color: var(--color-vanilla);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
-  }
-
-  .btn img {
-    margin-right: 10px;
-  }
-
-  .btn-primary {
     background-color: var(--color-white);
-    border-color: var(--color-link);
+    border: 1px solid var(--color-link);
     color: var(--color-primary);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   }
 
-  .btn-primary:hover {
+  .btn:hover {
     background-color: var(--color-link);
     color: var(--color-white);
   }
 
   .btn-secondary {
-    border-color: var(--color-vanilla);
+    background: transparent;
+    border-color: var(--color-white);
     color: var(--color-secondary);
   }
 
   .btn-secondary:hover {
-    border: 1px solid var(--color-primary);
+    border-color: var(--color-primary);
     color: var(--color-primary);
   }
 </style>
@@ -165,7 +145,7 @@ const { title, description } = Astro.props
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Permanent+Marker&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>

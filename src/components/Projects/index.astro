@@ -2,163 +2,28 @@
 import { projects } from '../../../utils/data/projects.js'
 ---
 
-<style>
-  article {
-    --img-scale: 1.001;
-    --title-color: black;
-    --link-icon-translate: -20px;
-    --link-icon-opacity: 0;
-    position: relative;
-    border-radius: 16px;
-    box-shadow: none;
-    background: var(--color-vanilla);
-    transform-origin: center;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-  }
-
-  article a::after {
-    position: absolute;
-    inset-block: 0;
-    inset-inline: 0;
-    cursor: pointer;
-    content: '';
-  }
-
-  /* basic article elements styling */
-  article h2 {
-    font-size: 1.9rem;
-    weight: bold;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    transition: color 0.3s ease-out;
-  }
-
-  figure {
-    margin: 0;
-    padding: 0;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  article img {
-    max-width: 100%;
-    transform-origin: center;
-    transform: scale(var(--img-scale));
-    transition: transform 0.4s ease-in-out;
-    object-fit: cover;
-    width: 100%;
-    overflow: hidden;
-    aspect-ratio: 4 / 3;
-  }
-
-  .article-body {
-    padding: 24px;
-    color: var(--color-secondary);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  article a {
-    margin-top: 15px;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #28666e;
-  }
-
-  article a:focus {
-    outline: 1px dotted #28666e;
-  }
-
-  article a .icon {
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
-    transform: translateX(var(--link-icon-translate));
-    opacity: var(--link-icon-opacity);
-    transition: all 0.3s;
-  }
-
-  /* using the has() relational pseudo selector to update our custom properties */
-  article:has(:hover, :focus) {
-    --img-scale: 1.1;
-    --title-color: var(--color-primary);
-    --link-icon-translate: 0;
-    --link-icon-opacity: 1;
-    box-shadow:
-      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-
-  .projects__container {
-    display: grid;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-  }
-
-  @media screen and (max-width: 768px) {
-    figure {
-      aspect-ratio: 16 / 9;
-    }
-    img {
-      aspect-ratio: 16 / 9;
-    }
-    article {
-      container: card/inline-size;
-    }
-  }
-
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-</style>
-<section id="projects" class="container">
+<section id="projects" class="container py-10">
   <h2 class="section__title">Projects</h2>
   <p class="section__description">
-    I show you to me the best and important projects that I have. I think that
-    this projects help me to know how do APIs, how implement that and do the
-    interaction with the users.
+    I show you to me the best and important projects that I have. I think that this projects help me to know how do APIs, how implement that and do the interaction with the users.
   </p>
-  <div class="projects__container">
+
+  <div class="grid gap-6 lg:grid-cols-2">
     {
       projects.map((project) => (
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <img alt={project.title} src={`/img/projects/${project.image}`} />
-            </figure>
-            <div class="article-body">
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <a href={project.link} class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </a>
-            </div>
+        <article class="group overflow-hidden rounded-[16px] bg-bg-surface text-text-secondary shadow-[0_12px_30px_rgba(0,0,0,0.12)] transition duration-300 hover:-translate-y-1">
+          <figure class="overflow-hidden aspect-[4/3]">
+            <img class="h-full w-full object-cover transition duration-500 group-hover:scale-110" alt={project.title} src={`/img/projects/${project.image}`} />
+          </figure>
+          <div class="flex h-full flex-col gap-4 p-6">
+            <h2 class="text-2xl font-semibold text-text-primary">{project.title}</h2>
+            <p class="flex-1 leading-7">{project.description}</p>
+            <a href={project.link} class="inline-flex items-center gap-2 text-accent-blue transition hover:text-accent-red focus:outline focus:outline-2 focus:outline-accent-blue">
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
           </div>
         </article>
       ))

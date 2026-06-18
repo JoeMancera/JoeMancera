@@ -2,51 +2,24 @@
 import { hobbies } from '../../utils/data/hobbies'
 ---
 
-<section id="hobbies" class="container">
+<section id="hobbies" class="container py-10">
   <h2 class="section__title">Hobbies</h2>
   <p class="section__description">
     I want to share with you my hobbies and some of my favorite things.
   </p>
-  <ul class="hobbies__container">
+
+  <ul class="grid gap-8 md:grid-cols-2 p-0">
     {
       hobbies.map((hobby) => (
-        <div class="hobby">
-          <div class="hobby__description">
-            <h3>{hobby.title}</h3>
+        <li class="flex flex-col items-center justify-center gap-6 rounded-[20px] border border-accent-blue bg-bg-surface p-6 text-center text-text-primary">
+          <div class="h-full w-full rounded-[16px] bg-bg-base p-6">
+            <h3 class="text-xl font-semibold">{hobby.title}</h3>
           </div>
-          <div class="hobby__image">
-            <img src={`img/${hobby.image}`} alt="" loading="lazy" />
+          <div class="h-48 w-full overflow-hidden rounded-[16px] bg-bg-surface shadow-[0_10px_30px_rgba(0,0,0,0.1)]">
+            <img class="h-full w-full object-cover" src={`img/${hobby.image}`} alt={hobby.title} loading="lazy" />
           </div>
-        </div>
+        </li>
       ))
     }
   </ul>
 </section>
-<style>
-  .hobbies__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    padding: 0;
-  }
-
-  .hobby {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .hobby__description {
-    margin-bottom: 20px;
-  }
-
-  @media only screen and (min-width: 560px) {
-    .hobbies__container {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-</style>

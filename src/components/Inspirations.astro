@@ -1,165 +1,70 @@
-<style>
-  .inspiration__item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 32px;
-  }
-
-  .inspiration__image,
-  .inspiration__image img {
-    border-color: 2px solid var(--color-vanilla);
-    align-self: flex-end;
-    width: 40px;
-    height: 40px;
-  }
-
-  .inspiration__content {
-    color: var(--color-link);
-    background-color: var(--color-vanilla);
-    border: 2px solid var(--color-link);
-    max-width: 400px;
-    max-height: 270px;
-    border-radius: 12px 12px 12px 0px;
-    margin-left: 8px;
-    padding: 12px;
-  }
-
-  .inspiration__item--right {
-    flex-direction: row-reverse;
-  }
-
-  .inspiration__item--right .inspiration__content {
-    border-radius: 12px 12px 0px 12px;
-    margin-left: 0;
-    margin-right: 8px;
-  }
-
-  .inspiration__content h5 {
-    color: var(--color-primary);
-  }
-
-  .inspiration__content blockquote {
-    font: var(--font-headline3);
-    margin: 18px 12px;
-    color: var(--color-primary);
-  }
-
-  @media only screen and (min-width: 560px) {
-    .inspiration__image,
-    .inspiration__image img {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    .inspiration__item--right {
-      flex-direction: row;
-    }
-
-    .inspiration__item--right .inspiration__content {
-      margin-left: 8px;
-      margin-right: 0;
-      border-radius: 12px 12px 12px 0px;
-    }
-
-    .inspirations__container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 80px;
-    }
-  }
-</style>
-<section id="inspirations" class="container">
+<section id="inspirations" class="container py-10">
   <h2 class="section__title">Inspirations</h2>
   <p class="section__description">
-    Everything I think or have in my mind, is influenced by incredible people,
-    Their dreams come true, they give me the power to never give up and keep
-    pushing.
+    Everything I think or have in my mind, is influenced by incredible people, Their dreams come true, they give me the power to never give up and keep pushing.
   </p>
-  <div class="inspirations__container">
-    <div class="inspiration__item">
-      <figure class="inspiration__image">
-        <img
-          src="/img/inspiration/mududev.jpg"
-          alt="Miguel Ángel Durán"
-          loading="lazy"
-        />
+
+  <div class="grid gap-8 lg:grid-cols-2">
+    <div class="flex gap-4 rounded-[16px] border-2 border-accent-blue bg-bg-surface p-4">
+      <figure class="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-accent-blue">
+        <img class="h-full w-full object-cover" src="/img/inspiration/mududev.jpg" alt="Miguel Ángel Durán" loading="lazy" />
       </figure>
-      <div class="inspiration__content">
-        <p>Miguel Ángel Durán</p>
-        <h5>The best streamer dev ever</h5>
-        <blockquote cite="https://midu.dev/">
-          “Don't compare yourself... You have just started, and you have many
-          things ahead of you to learn and assimilate”
+      <div class="flex-1 space-y-3">
+        <p class="text-sm text-text-secondary">Miguel Ángel Durán</p>
+        <h5 class="text-lg font-semibold text-accent-red">The best streamer dev ever</h5>
+        <blockquote class="text-base italic text-text-secondary">
+          “Don't compare yourself... You have just started, and you have many things ahead of you to learn and assimilate”
         </blockquote>
       </div>
     </div>
-    <div class="inspiration__item inspiration__item--right">
-      <figure class="inspiration__image">
-        <img
-          src="/img/inspiration/pamela-valdes.png"
-          alt="Pamela Valdés"
-          loading="lazy"
-        />
+
+    <div class="flex gap-4 rounded-[16px] border-2 border-accent-blue bg-bg-surface p-4 lg:flex-row-reverse">
+      <figure class="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-accent-blue">
+        <img class="h-full w-full object-cover" src="/img/inspiration/pamela-valdes.png" alt="Pamela Valdés" loading="lazy" />
       </figure>
-      <div class="inspiration__content">
-        <p>Pamela Valdés</p>
-        <h5>CEO & Cofounder of Beek</h5>
-        <blockquote cite="https://beek.io">
-          “If you are not willing to lose everything, you are not willing to win
-          it”
+      <div class="flex-1 space-y-3">
+        <p class="text-sm text-text-secondary">Pamela Valdés</p>
+        <h5 class="text-lg font-semibold text-accent-red">CEO & Cofounder of Beek</h5>
+        <blockquote class="text-base italic text-text-secondary">
+          “If you are not willing to lose everything, you are not willing to win it”
         </blockquote>
       </div>
     </div>
-    <div class="inspiration__item inspiration__item">
-      <figure class="inspiration__image">
-        <img
-          src="/img/inspiration/tatiana-calderon.png"
-          alt="Tatiana Calderón"
-          loading="lazy"
-        />
+
+    <div class="flex gap-4 rounded-[16px] border-2 border-accent-blue bg-bg-surface p-4">
+      <figure class="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-accent-blue">
+        <img class="h-full w-full object-cover" src="/img/inspiration/tatiana-calderon.png" alt="Tatiana Calderón" loading="lazy" />
       </figure>
-      <div class="inspiration__content">
-        <p>Tatiana Calderón</p>
-        <h5>Super Formula & WEC LMP2 driver</h5>
-        <blockquote
-          cite="https://www.femalesinmotorsport.com/post/tatiana-calder%C3%B3n-we-re-there-to-compete-against-the-best"
-        >
+      <div class="flex-1 space-y-3">
+        <p class="text-sm text-text-secondary">Tatiana Calderón</p>
+        <h5 class="text-lg font-semibold text-accent-red">Super Formula & WEC LMP2 driver</h5>
+        <blockquote class="text-base italic text-text-secondary">
           “The only person who can determine what your limits are is you”
         </blockquote>
       </div>
     </div>
-    <div class="inspiration__item inspiration__item--right">
-      <figure class="inspiration__image">
-        <img
-          src="/img/inspiration/robbie.png"
-          alt="Robbie J. Frie"
-          loading="lazy"
-        />
+
+    <div class="flex gap-4 rounded-[16px] border-2 border-accent-blue bg-bg-surface p-4 lg:flex-row-reverse">
+      <figure class="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-accent-blue">
+        <img class="h-full w-full object-cover" src="/img/inspiration/robbie.png" alt="Robbie J. Frye" loading="lazy" />
       </figure>
-      <div class="inspiration__content">
-        <p>Robbie J. Frye</p>
-        <h5>Host of The Frye Show podcast</h5>
-        <blockquote cite="https://thefryeshow.com">
+      <div class="flex-1 space-y-3">
+        <p class="text-sm text-text-secondary">Robbie J. Frye</p>
+        <h5 class="text-lg font-semibold text-accent-red">Host of The Frye Show podcast</h5>
+        <blockquote class="text-base italic text-text-secondary">
           “You can earn more money, not more time”
         </blockquote>
       </div>
     </div>
-    <div class="inspiration__item inspiration__item">
-      <figure class="inspiration__image">
-        <img
-          src="/img/inspiration/lewis-hamilton-turkey.png"
-          alt="Lewis Hamilton on Turkey"
-          loading="lazy"
-        />
+
+    <div class="flex gap-4 rounded-[16px] border-2 border-accent-blue bg-bg-surface p-4">
+      <figure class="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-accent-blue">
+        <img class="h-full w-full object-cover" src="/img/inspiration/lewis-hamilton-turkey.png" alt="Lewis Hamilton on Turkey" loading="lazy" />
       </figure>
-      <div class="inspiration__content">
-        <p>Lewis Hamilton</p>
-        <h5>F1 World champion</h5>
-        <blockquote
-          cite="https://twitter.com/LewisHamilton/status/1459981881383038980"
-        >
+      <div class="flex-1 space-y-3">
+        <p class="text-sm text-text-secondary">Lewis Hamilton</p>
+        <h5 class="text-lg font-semibold text-accent-red">F1 World champion</h5>
+        <blockquote class="text-base italic text-text-secondary">
           “You can do anything you put your mind to!”
         </blockquote>
       </div>
